@@ -17,7 +17,7 @@ class SplashSatria extends StatelessWidget {
                 color: Colors.transparent,
                 child: InkWell(
                   customBorder: const CircleBorder(),
-                  /*//Todo ke splash selanjutnya
+                  /*//Todo ke splash berikutnya
                   onTap: () {
                     Navigator.push(
                       context,
@@ -48,57 +48,57 @@ class SplashSatria extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: 20),
+            const SizedBox(height: 30),
 
             const Text(
-              "Ingpo Terupdate",
+              "Ingpo Kampus",
               style: TextStyle(
                 fontFamily: 'Poppins',
-                fontSize: 22.0,
+                fontSize: 24.0,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
             ),
 
-            const Spacer(),
+            const SizedBox(height: 10),
 
+            const Text(
+              "Terupdate & Terkini",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                fontSize: 16.0,
+                color: Color(0xFFD9D9D9),
+              ),
+            ),
+
+            const Spacer(),
+            //bullet indikator
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Container(
-                  width: 12,
-                  height: 12,
-                  decoration: const BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Colors.white,
-                  ),
-                ),
+                _buildDot(isActive: true), //aktif
                 const SizedBox(width: 10),
-
-                Container(
-                  width: 10,
-                  height: 10,
-                  decoration: const BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Color(0xFFD9D9D9),
-                  ),
-                ),
+                _buildDot(isActive: false), //nonaktif
                 const SizedBox(width: 10),
-
-                Container(
-                  width: 10,
-                  height: 10,
-                  decoration: const BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Color(0xFFD9D9D9),
-                  ),
-                ),
+                _buildDot(isActive: false), //nonaktif
               ],
             ),
 
             const SizedBox(height: 50),
           ],
         ),
+      ),
+    );
+  }
+
+  Widget _buildDot({required bool isActive}) {
+    return Container(
+      width: isActive ? 12 : 10,
+      height: isActive ? 12 : 10,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: isActive ? Colors.white : const Color(0xFFD9D9D9),
       ),
     );
   }
