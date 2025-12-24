@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:kelompok4_app_mobile/screens/splash/splash_screen1.dart';
-import 'package:kelompok4_app_mobile/screens/splash/splash_screen2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Project UAS Kelompok 4 Trio',
       theme: ThemeData(useMaterial3: true),
-      home: const SplashSatria(),
+      home: const SplashScreen1(),
     );
   }
 }

@@ -39,7 +39,7 @@ class SplashSatria extends StatelessWidget {
                         ),
                       ],
                       image: const DecorationImage(
-                        image: AssetImage("assets/logo1.png"),
+                        image: AssetImage("assets/images/logo1.png"),
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -54,10 +54,9 @@ class SplashSatria extends StatelessWidget {
               "Ingpo Terupdate",
               style: TextStyle(
                 fontFamily: 'Poppins',
-                fontSize: 24.0,
+                fontSize: 22.0,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
-                letterSpacing: 1.2,
               ),
             ),
 
