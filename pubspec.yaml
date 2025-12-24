@@ -92,6 +92,10 @@ flutter:
         - asset: assets/fonts/Roboto-Medium.ttf
         - asset: assets/fonts/Roboto-Regular.ttf
           weight: 700
+    - family: MrDafoe
+      fonts:
+        - asset: assets/fonts/MrDafoe-Regular.ttf
+          weight: 700      
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
