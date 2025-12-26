@@ -18,7 +18,7 @@ class _EnzhoProfileState extends State<EnzhoProfile> {
           "My Profile",
           style: TextStyle(
             color: Color(0xffFFFFFF),
-            fontFamily: 'Poppins',
+            fontFamily: 'Bulgatti',
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -61,7 +61,7 @@ class _EnzhoProfileState extends State<EnzhoProfile> {
                           'Mohamad Enzho Yuliawan',
                           style: const TextStyle(
                             color: Colors.white,
-                            fontFamily: 'Poppins',
+                            fontFamily: 'Bulgatti',
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
                           ),
