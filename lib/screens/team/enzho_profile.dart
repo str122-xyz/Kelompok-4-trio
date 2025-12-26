@@ -32,22 +32,13 @@ class _EnzhoProfileState extends State<EnzhoProfile> {
       ),
       body: Center(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.all(10.0),
-          child: Column(
-            children: [
-              Card(
-                color: Color(0xff284B63),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      height: 500, 
-                      width: 500,
-                    )
-                  ],
-                ),
-              ),
-            ],
+          padding: const EdgeInsets.all(16),
+          child: Card(
+            color: const Color(0xff284B63),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
+            
           ),
         ),
       ),
