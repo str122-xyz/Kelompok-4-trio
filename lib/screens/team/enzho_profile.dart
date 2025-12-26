@@ -12,7 +12,8 @@ class _EnzhoProfileState extends State<EnzhoProfile> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Dashboard"),
+        title: const Text("profil enzho"),
+        centerTitle: true,
         actions: const [],
       ),
       body: SingleChildScrollView(
