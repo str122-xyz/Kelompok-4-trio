@@ -67,7 +67,8 @@ class _SplashEnzhoState extends State<SplashEnzho> {
                   'Ingpo Kampus',
                   style: TextStyle(
                     fontFamily: 'Poppins',
-                    fontSize: 24
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold
                   ),
                 )
               ],
