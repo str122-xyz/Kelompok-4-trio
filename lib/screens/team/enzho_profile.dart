@@ -68,7 +68,19 @@ class _EnzhoProfileState extends State<EnzhoProfile> {
                         ),
                       ),
                     ],
-                  )
+                  ),
+
+                  SizedBox(height: 20),
+
+                  Text(
+                    'NIM: 1123150029',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Poppins',
+                      fontSize: 14,
+                    ),
+                  ),
+
                 ],
               ),
             ),
