@@ -96,6 +96,10 @@ flutter:
       fonts:
         - asset: assets/fonts/MrDafoe-Regular.ttf
           weight: 700      
+    - family: Bulgatti
+      fonts:
+        - asset: assets/fonts/Bulgatti.ttf
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
