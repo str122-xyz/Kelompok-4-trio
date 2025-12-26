@@ -103,6 +103,18 @@ class _EnzhoProfileState extends State<EnzhoProfile> {
                     ),
                   ),
 
+                  SizedBox(height: 8),
+        
+                  Text(
+                    'Tentang Saya:',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Poppins',
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+
                 ],
               ),
             ),
