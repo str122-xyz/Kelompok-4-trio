@@ -89,11 +89,21 @@ class _SplashScreenSadamState extends State<SplashScreenSadam> {
                 _buildDot(isActive: true), //aktif
               ],
             ),
-
             const SizedBox(height: 50),
           ],
         ),
         ),
+    );
+  }
+  
+   Widget _buildDot({required bool isActive}) {
+    return Container(
+      width: isActive ? 12 : 10,
+      height: isActive ? 12 : 10,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: isActive ? Colors.white : const Color(0xFFD9D9D9),
+      ),
     );
   }
 }
