@@ -77,7 +77,8 @@ class _SplashEnzhoState extends State<SplashEnzho> {
 
                 Text(
                   'Eksplorasi dunia kampus jadi lebih mudah. Gak bakal ketinggalan info penting lagi!',
-                  
+                  textAlign: TextAlign.center,
+
                 )
               ],
           ),
