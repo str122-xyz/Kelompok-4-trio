@@ -13,12 +13,27 @@ class _SplashEnzhoState extends State<SplashEnzho> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(""),
+        backgroundColor: Color.fromRGBO(0, 35, 53, 1),
         automaticallyImplyLeading: false,
       ),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(10.0),
-        child: Column(
-            children: [],
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Color.fromRGBO(0, 35, 53, 1),
+              Color(0xff3C6E71)
+            ],
+          ),
+        ),
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.all(10.0),
+          child: Column(
+              children: [],
+          ),
         ),
       ),
     );
