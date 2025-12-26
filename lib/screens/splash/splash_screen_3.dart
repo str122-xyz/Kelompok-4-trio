@@ -48,6 +48,7 @@ class _SplashEnzhoState extends State<SplashEnzho> {
                         boxShadow: [
                           BoxShadow(
                             color: Colors.white,
+                            blurRadius: 20
                           )
                         ]
                       ),
