@@ -12,7 +12,15 @@ class _EnzhoProfileState extends State<EnzhoProfile> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("profil enzho"),
+        backgroundColor: Color(0xff284B63),
+        title: const Text(
+          "My Profile",
+          style: TextStyle(
+            color: Color(0xffFFFFFF),
+            fontFamily: 'Poppins',
+            fontWeight: FontWeight.bold
+          ),
+        ),
         centerTitle: true,
         actions: const [],
       ),
