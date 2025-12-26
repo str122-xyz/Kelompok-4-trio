@@ -34,7 +34,13 @@ class _SplashEnzhoState extends State<SplashEnzho> {
           child: Column(
               children: [
                 Center(
-                  
+                  child: Material(
+                  color:Colors.transparent,
+                    child: InkWell(
+                      customBorder: const CircleBorder(),
+
+                    ),
+                  )
                 )
               ],
           ),
