@@ -29,6 +29,26 @@ class _SplashScreenSadamState extends State<SplashScreenSadam> {
                       MaterialPageRoute(builder: (context) => const LoginPage()),
                     );
                   },*/
+                  child: Container(
+                    width: 250,
+                    height: 250,
+                    margin: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.black,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.3),
+                          blurRadius: 20,
+                          offset: const Offset(0, 10),
+                        ),
+                      ],
+                      image: const DecorationImage(
+                        image: AssetImage("assets/images/logo3.png"),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ),
