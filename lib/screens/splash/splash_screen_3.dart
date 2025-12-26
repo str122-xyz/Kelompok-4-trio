@@ -43,6 +43,7 @@ class _SplashEnzhoState extends State<SplashEnzho> {
                       width: 250,
                       height: 250,
                       decoration: BoxDecoration(
+                        shape: BoxShape.circle,
                         color: Colors.white,
                       ),
                     ),
