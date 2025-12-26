@@ -22,7 +22,11 @@ class _EnzhoProfileState extends State<EnzhoProfile> {
           ),
         ),
         centerTitle: true,
-        actions: const [],
+        leading: IconButton(
+          onPressed: () {
+
+          }, 
+          icon: Icon(Icons.arrow_back, color: Colors.white,)),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(10.0),
