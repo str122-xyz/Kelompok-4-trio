@@ -29,72 +29,77 @@ class _SplashEnzhoState extends State<SplashEnzho> {
             ],
           ),
         ),
-        child: SingleChildScrollView(
-          padding: const EdgeInsets.all(10.0),
-          child: Column(
-              children: [
-                Center(
-                  child: Material(
-                  color:Colors.transparent,
-                    child: InkWell(
-                      customBorder: const CircleBorder(),
-                    
-                    child: Container(
-                      width: 250,
-                      height: 250,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Colors.white,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.white,
-                            blurRadius: 20,
+        child: SafeArea(
+            child: Column(
+                children: [
+                  Spacer(),
+                  Center(
+                    child: Material(
+                    color:Colors.transparent,
+                      child: InkWell(
+                        customBorder: const CircleBorder(),
+                      
+                      child: Container(
+                        width: 250,
+                        height: 250,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.white,
+                              blurRadius: 20,
+                            )
+                          ],
+                          image: DecorationImage(
+                            image: AssetImage("assets/images/logo2.png"),
+                            fit: BoxFit.cover
                           )
-                        ],
-                        image: DecorationImage(
-                          image: AssetImage("assets/images/logo2.png"),
-                          fit: BoxFit.cover
-                        )
+                        ),
                       ),
-                    ),
-                    ),
-                  )
-                ),
-
-                SizedBox(height: 30,),
-
-                Text(
-                  'Ingpo Kampus',
-                  style: TextStyle(
-                    fontFamily: 'Poppins',
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                      ),
+                    )
                   ),
-                ),
-
-                SizedBox(height: 10,),
-
-                Text(
-                  'Eksplorasi dunia kampus jadi lebih mudah. Gak bakal ketinggalan info penting lagi!',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'Poppins',
-                    color: Colors.white,
+          
+                  SizedBox(height: 30,),
+          
+                  Text(
+                    'Ingpo Kampus',
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
                   ),
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                _buildDot(isActive: false), 
-                const SizedBox(width: 10),
-                _buildDot(isActive: true), 
-                const SizedBox(width: 10),
-                _buildDot(isActive: false), 
-              ],
-                )
-              ],
-          ),
+          
+                  SizedBox(height: 10,),
+          
+                  Text(
+                    'Eksplorasi dunia kampus jadi lebih mudah. Gak bakal ketinggalan info penting lagi!',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      color: Colors.white,
+                    ),
+                  ),
+          
+                  Spacer(),
+          
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      _buildDot(isActive: false), 
+                      const SizedBox(width: 10),
+                      _buildDot(isActive: true), 
+                      const SizedBox(width: 10),
+                      _buildDot(isActive: false), 
+                    ],
+                  ),
+          
+                  SizedBox(height: 50),
+                ],
+            ),
         ),
       ),
     );
