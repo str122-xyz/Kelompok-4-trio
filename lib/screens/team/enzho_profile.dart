@@ -19,29 +19,35 @@ class _EnzhoProfileState extends State<EnzhoProfile> {
           style: TextStyle(
             color: Color(0xffFFFFFF),
             fontFamily: 'Poppins',
-            fontWeight: FontWeight.bold
+            fontWeight: FontWeight.bold,
           ),
         ),
         centerTitle: true,
         leading: IconButton(
           onPressed: () {
             Navigator.popUntil(context, (route) => route.isFirst);
-          }, 
-          icon: Icon(Icons.arrow_back, color: Colors.white,)),
+          },
+          icon: Icon(Icons.arrow_back, color: Colors.white),
+        ),
       ),
       body: Center(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(10.0),
           child: Column(
-              children: [
-                Container(
-                  height: 100,
-                  width: 100,
-                  child: Card(
-                    color: Color(0xff284B63),
-                  ),
-                )
-              ],
+            children: [
+              Card(
+                color: Color(0xff284B63),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      height: 500, 
+                      width: 500,
+                    )
+                  ],
+                ),
+              ),
+            ],
           ),
         ),
       ),
