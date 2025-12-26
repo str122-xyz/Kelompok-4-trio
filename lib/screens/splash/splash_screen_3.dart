@@ -83,7 +83,16 @@ class _SplashEnzhoState extends State<SplashEnzho> {
                     color: Colors.white,
                   ),
                 ),
-                Row()
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                _buildDot(isActive: false), 
+                const SizedBox(width: 10),
+                _buildDot(isActive: true), 
+                const SizedBox(width: 10),
+                _buildDot(isActive: false), 
+              ],
+                )
               ],
           ),
         ),
