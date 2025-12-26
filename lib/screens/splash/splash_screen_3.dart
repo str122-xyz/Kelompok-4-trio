@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kelompok4_app_mobile/screens/splash/splash_screen2.dart';
 
 class SplashEnzho extends StatefulWidget {
   const SplashEnzho({super.key});
@@ -11,11 +12,6 @@ class _SplashEnzhoState extends State<SplashEnzho> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(""),
-        backgroundColor: Color.fromRGBO(0, 35, 53, 1),
-        automaticallyImplyLeading: false,
-      ),
       body: Container(
         width: double.infinity,
         height: double.infinity,
@@ -38,6 +34,12 @@ class _SplashEnzhoState extends State<SplashEnzho> {
                     color:Colors.transparent,
                       child: InkWell(
                         customBorder: const CircleBorder(),
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const SplashSatria()),
+                          );
+                        },
                       
                       child: Container(
                         width: 250,
