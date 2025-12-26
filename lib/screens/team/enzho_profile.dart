@@ -81,6 +81,17 @@ class _EnzhoProfileState extends State<EnzhoProfile> {
                     ),
                   ),
 
+                  SizedBox(height: 8),
+        
+                  Text(
+                    'Kelas: TI 23 SE 1',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Poppins',
+                      fontSize: 14,
+                    ),
+                  ),
+
                 ],
               ),
             ),
