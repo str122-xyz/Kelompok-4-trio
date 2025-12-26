@@ -43,7 +43,12 @@ class _EnzhoProfileState extends State<EnzhoProfile> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      
+                    ],
+                  )
                 ],
               ),
             ),
