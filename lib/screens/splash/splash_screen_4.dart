@@ -16,8 +16,22 @@ class _SplashScreenSadamState extends State<SplashScreenSadam> {
         child: Column(
           children: [
             const Spacer(),
-
             
+            Center(
+              child: Material(
+                color: Colors.transparent,
+                child: InkWell(
+                  customBorder: const CircleBorder(),
+                  /* // Todo ke splash berikutnya
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const LoginPage()),
+                    );
+                  },*/
+                ),
+              ),
+            ),
           ],
         )),
     );
