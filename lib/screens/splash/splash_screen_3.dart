@@ -38,7 +38,14 @@ class _SplashEnzhoState extends State<SplashEnzho> {
                   color:Colors.transparent,
                     child: InkWell(
                       customBorder: const CircleBorder(),
-
+                    
+                    child: Container(
+                      width: 250,
+                      height: 250,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
+                    ),
                     ),
                   )
                 )
