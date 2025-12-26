@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kelompok4_app_mobile/screens/splash/splash_screen_3.dart';
 
 class SplashSatria extends StatelessWidget {
   const SplashSatria({super.key});
@@ -17,13 +18,13 @@ class SplashSatria extends StatelessWidget {
                 color: Colors.transparent,
                 child: InkWell(
                   customBorder: const CircleBorder(),
-                  /*//Todo ke splash berikutnya
+                  // Todo ke splash berikutnya
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const Splash(ganti nama)()),
+                      MaterialPageRoute(builder: (context) => const SplashEnzho()),
                     );
-                  },*/
+                  },
                   child: Container(
                     width: 250,
                     height: 250,

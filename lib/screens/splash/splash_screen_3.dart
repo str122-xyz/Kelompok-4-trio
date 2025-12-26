@@ -12,8 +12,8 @@ class _SplashEnzhoState extends State<SplashEnzho> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Dashboard"),
-        actions: const [],
+        title: const Text(""),
+        automaticallyImplyLeading: false,
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(10.0),
