@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kelompok4_app_mobile/screens/team/enzho_profile.dart';
+import 'package:kelompok4_app_mobile/screens/splash/splash_screen_4.dart';
 
 class SplashEnzho extends StatefulWidget {
   const SplashEnzho({super.key});
@@ -37,7 +37,7 @@ class _SplashEnzhoState extends State<SplashEnzho> {
                         onTap: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => const EnzhoProfile()),
+                            MaterialPageRoute(builder: (context) => const SplashScreenSadam()),
                           );
                         },
                       
