@@ -92,6 +92,17 @@ class _EnzhoProfileState extends State<EnzhoProfile> {
                     ),
                   ),
 
+                  SizedBox(height: 8),
+        
+                  Text(
+                    'Keahlian: Futsal & Basic Programming',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Poppins',
+                      fontSize: 14,
+                    ),
+                  ),
+
                 ],
               ),
             ),
