@@ -68,7 +68,8 @@ class _SplashEnzhoState extends State<SplashEnzho> {
                   style: TextStyle(
                     fontFamily: 'Poppins',
                     fontSize: 24,
-                    fontWeight: FontWeight.bold
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
                   ),
                 )
               ],
