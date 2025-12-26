@@ -76,6 +76,21 @@ class _SplashScreenSadamState extends State<SplashScreenSadam> {
                 color: Color(0xFFD9D9D9),
               ),
             ),
+
+            const Spacer(),
+            //bullet indikator
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                _buildDot(isActive: false), //nonaktif
+                const SizedBox(width: 10),
+                _buildDot(isActive: false), //nonaktif
+                const SizedBox(width: 10),
+                _buildDot(isActive: true), //aktif
+              ],
+            ),
+
+            const SizedBox(height: 50),
           ],
         ),
         ),
