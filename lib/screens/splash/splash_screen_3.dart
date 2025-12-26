@@ -75,6 +75,10 @@ class _SplashEnzhoState extends State<SplashEnzho> {
 
                 SizedBox(height: 10,),
 
+                Text(
+                  'Eksplorasi dunia kampus jadi lebih mudah. Gak bakal ketinggalan info penting lagi!',
+                  
+                )
               ],
           ),
         ),
