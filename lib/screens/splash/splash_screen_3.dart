@@ -48,9 +48,13 @@ class _SplashEnzhoState extends State<SplashEnzho> {
                         boxShadow: [
                           BoxShadow(
                             color: Colors.white,
-                            blurRadius: 20
+                            blurRadius: 20,
                           )
-                        ]
+                        ],
+                        image: DecorationImage(
+                          image: AssetImage("assets/images/logo2.png"),
+                          fit: BoxFit.cover
+                        )
                       ),
                     ),
                     ),
