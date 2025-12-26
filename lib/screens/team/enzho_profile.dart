@@ -33,7 +33,15 @@ class _EnzhoProfileState extends State<EnzhoProfile> {
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(10.0),
           child: Column(
-              children: [],
+              children: [
+                Container(
+                  height: 100,
+                  width: 100,
+                  child: Card(
+                    color: Color(0xff284B63),
+                  ),
+                )
+              ],
           ),
         ),
       ),
