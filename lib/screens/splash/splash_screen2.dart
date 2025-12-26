@@ -22,7 +22,9 @@ class SplashSatria extends StatelessWidget {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const SplashEnzho()),
+                      MaterialPageRoute(
+                        builder: (context) => const SplashEnzho(),
+                      ),
                     );
                   },
                   child: Container(
