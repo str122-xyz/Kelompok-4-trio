@@ -24,7 +24,7 @@ class _EnzhoProfileState extends State<EnzhoProfile> {
         centerTitle: true,
         leading: IconButton(
           onPressed: () {
-
+            Navigator.popUntil(context, (route) => route.isFirst);
           }, 
           icon: Icon(Icons.arrow_back, color: Colors.white,)),
       ),
