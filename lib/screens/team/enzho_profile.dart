@@ -38,7 +38,9 @@ class _EnzhoProfileState extends State<EnzhoProfile> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
             ),
-            
+            child: Padding(
+              padding: EdgeInsetsGeometry.all(16)
+            ),
           ),
         ),
       ),
