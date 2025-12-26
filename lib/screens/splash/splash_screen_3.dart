@@ -59,7 +59,8 @@ class _SplashEnzhoState extends State<SplashEnzho> {
                     ),
                     ),
                   )
-                )
+                ),
+                SizedBox(height: 30,)
               ],
           ),
         ),
