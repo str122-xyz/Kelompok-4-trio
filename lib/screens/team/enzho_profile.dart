@@ -115,6 +115,17 @@ class _EnzhoProfileState extends State<EnzhoProfile> {
                     ),
                   ),
 
+                  SizedBox(height: 4),
+        
+                  Text(
+                    'Hi, Nama Saya Mohamad Enzho Yuliawan. Saya Mahasiswa Global Institute mengambil jurusan Teknik Informatika dengan konsentrasi Software Engineering. fokus saya saat ini adalah kuliah dan futsal',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Poppins',
+                      fontSize: 14,
+                    ),
+                  ),
+
                 ],
               ),
             ),
