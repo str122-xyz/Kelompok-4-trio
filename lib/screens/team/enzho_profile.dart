@@ -56,6 +56,17 @@ class _EnzhoProfileState extends State<EnzhoProfile> {
                         ),
                       ),
                       SizedBox(width: 16),
+                      Expanded(
+                        child: Text(
+                          'Mohamad Enzho Yuliawan',
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Poppins',
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
                     ],
                   )
                 ],
