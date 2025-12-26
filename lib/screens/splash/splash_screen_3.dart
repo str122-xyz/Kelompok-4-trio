@@ -71,7 +71,10 @@ class _SplashEnzhoState extends State<SplashEnzho> {
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
-                )
+                ),
+
+                SizedBox(height: 10,),
+
               ],
           ),
         ),
