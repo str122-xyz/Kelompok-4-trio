@@ -32,7 +32,11 @@ class _SplashEnzhoState extends State<SplashEnzho> {
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(10.0),
           child: Column(
-              children: [],
+              children: [
+                Center(
+                  
+                )
+              ],
           ),
         ),
       ),
