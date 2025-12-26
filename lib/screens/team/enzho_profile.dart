@@ -39,7 +39,13 @@ class _EnzhoProfileState extends State<EnzhoProfile> {
               borderRadius: BorderRadius.circular(12),
             ),
             child: Padding(
-              padding: EdgeInsetsGeometry.all(16)
+              padding: EdgeInsetsGeometry.all(16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  
+                ],
+              ),
             ),
           ),
         ),
