@@ -80,6 +80,7 @@ class _SplashEnzhoState extends State<SplashEnzho> {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontFamily: 'Poppins',
+                    color: Colors.white,
                   ),
 
                 )
