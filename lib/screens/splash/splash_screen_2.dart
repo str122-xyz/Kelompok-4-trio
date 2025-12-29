@@ -7,88 +7,98 @@ class SplashZeinn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF29B6F6),
-      body: SafeArea(
-        child: Column(
-          children: [
-            const Spacer(),
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [Color(0xFF29B6F6), Color(0xFF0277BD)],
+          ),
+        ),
+        child: SafeArea(
+          child: Column(
+            children: [
+              const Spacer(),
 
-            Center(
-              child: Material(
-                color: Colors.transparent,
-                child: InkWell(
-                  customBorder: const CircleBorder(),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const SplashEnzho(),
-                      ),
-                    );
-                  },
-                  child: Container(
-                    width: 250,
-                    height: 250,
-                    margin: const EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Colors.white,
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.white.withOpacity(0.5),
-                          blurRadius: 30,
-                          spreadRadius: 2,
+              Center(
+                child: Material(
+                  color: Colors.transparent,
+                  child: InkWell(
+                    customBorder: const CircleBorder(),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const SplashEnzho(),
                         ),
-                      ],
-                      image: const DecorationImage(
-                        image: AssetImage("assets/images/logo4.png"),
-                        fit: BoxFit.cover,
+                      );
+                    },
+                    child: Container(
+                      width: 250,
+                      height: 250,
+                      margin: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.white.withOpacity(0.5),
+                            blurRadius: 30,
+                            spreadRadius: 2,
+                          ),
+                        ],
+                        image: const DecorationImage(
+                          image: AssetImage("assets/images/logo4.png"),
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ),
                 ),
               ),
-            ),
 
-            const SizedBox(height: 30),
+              const SizedBox(height: 30),
 
-            const Text(
-              "Ingpo Kampus",
-              style: TextStyle(
-                fontFamily: 'Poppins',
-                fontSize: 24.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
+              const Text(
+                "Ingpo Kampus",
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  fontSize: 24.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
               ),
-            ),
 
-            const SizedBox(height: 10),
+              const SizedBox(height: 10),
 
-            const Text(
-              "Terupdate",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontFamily: 'Poppins',
-                fontSize: 16.0,
-                color: Color(0xFFD9D9D9),
+              const Text(
+                "Terupdate",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  fontSize: 16.0,
+                  color: Colors.white,
+                ),
               ),
-            ),
 
-            const Spacer(),
-            //Indikator
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                _buildDot(isActive: true), //aktif
-                const SizedBox(width: 10),
-                _buildDot(isActive: false), //nonaktif
-                const SizedBox(width: 10),
-                _buildDot(isActive: false), //nonaktif
-              ],
-            ),
+              const Spacer(),
+              //Indikator
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  _buildDot(isActive: true), //aktif
+                  const SizedBox(width: 10),
+                  _buildDot(isActive: false), //nonaktif
+                  const SizedBox(width: 10),
+                  _buildDot(isActive: false), //nonaktif
+                ],
+              ),
 
-            const SizedBox(height: 50),
-          ],
+              const SizedBox(height: 50),
+            ],
+          ),
         ),
       ),
     );
