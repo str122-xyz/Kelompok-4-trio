@@ -4,7 +4,8 @@ import 'package:kelompok4_app_mobile/screens/splash/splash_screen1.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  //Todo: buat inisiasi nanti
+  // await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
