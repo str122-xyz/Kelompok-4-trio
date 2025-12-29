@@ -22,4 +22,9 @@ class AuthService {
   Future<void> signOut() async {
     await _auth.signOut();
   }
+
+  // User yg lagi lojin
+  User? getCurrentUser() {
+    return _auth.currentUser;
+  }
 }
