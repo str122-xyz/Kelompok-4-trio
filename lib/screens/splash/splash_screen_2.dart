@@ -7,7 +7,7 @@ class SplashZeinn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFA7CCED),
+      backgroundColor: const Color(0xFF29B6F6),
       body: SafeArea(
         child: Column(
           children: [
@@ -33,8 +33,12 @@ class SplashZeinn extends StatelessWidget {
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       color: Colors.white,
-                      boxShadow: const [
-                        BoxShadow(color: Colors.white, blurRadius: 20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.white.withOpacity(0.5),
+                          blurRadius: 30,
+                          spreadRadius: 2,
+                        ),
                       ],
                       image: const DecorationImage(
                         image: AssetImage("assets/images/logo4.png"),
@@ -93,8 +97,8 @@ class SplashZeinn extends StatelessWidget {
   //fungsi indikator
   Widget _buildDot({required bool isActive}) {
     return Container(
-      width: isActive ? 12 : 8,
-      height: isActive ? 12 : 8,
+      width: isActive ? 12 : 10,
+      height: isActive ? 12 : 10,
       decoration: BoxDecoration(
         color: isActive ? Colors.white : Colors.white54,
         shape: BoxShape.circle,
