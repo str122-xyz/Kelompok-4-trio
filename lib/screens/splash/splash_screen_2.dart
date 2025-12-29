@@ -45,6 +45,30 @@ class SplashZeinn extends StatelessWidget {
                 ),
               ),
             ),
+
+            const SizedBox(height: 30),
+
+            const Text(
+              "Ingpo Kampus",
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                fontSize: 24.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
+
+            const SizedBox(height: 10),
+
+            const Text(
+              "Terupdate",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                fontSize: 16.0,
+                color: Color(0xFFD9D9D9),
+              ),
+            ),
           ],
         ),
       ),
