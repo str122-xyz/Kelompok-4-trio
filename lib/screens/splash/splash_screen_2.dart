@@ -26,6 +26,15 @@ class SplashZeinn extends StatelessWidget {
                       ),
                     );
                   },
+                  child: Container(
+                    width: 250,
+                    height: 250,
+                    margin: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.white,
+                    ),
+                  ),
                 ),
               ),
             ),
