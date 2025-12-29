@@ -9,6 +9,11 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  final _emailController = TextEditingController();
+  final _passwordController = TextEditingController();
+  final AuthService _authService = AuthService(); // auth service
+  bool _isLoading = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
