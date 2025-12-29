@@ -36,6 +36,10 @@ class SplashZeinn extends StatelessWidget {
                       boxShadow: const [
                         BoxShadow(color: Colors.white, blurRadius: 20),
                       ],
+                      image: const DecorationImage(
+                        image: AssetImage("assets/images/logo4.png"),
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ),
