@@ -14,6 +14,18 @@ class _LoginPageState extends State<LoginPage> {
   final AuthService _authService = AuthService(); // auth service
   bool _isLoading = false;
 
+  void _handleLogin() async {
+    //validasi input kosong
+    if (_emailController.text.isEmpty || _passwordController.text.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text("Email dan password ga boleh kosong!")),
+      );
+      return;
+    }
+
+    setState(() => _isLoading = true);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
