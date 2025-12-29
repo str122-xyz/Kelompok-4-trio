@@ -69,6 +69,21 @@ class SplashZeinn extends StatelessWidget {
                 color: Color(0xFFD9D9D9),
               ),
             ),
+
+            const Spacer(),
+            //Indikator
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                _buildDot(isActive: true), //aktif
+                const SizedBox(width: 10),
+                _buildDot(isActive: false), //nonaktif
+                const SizedBox(width: 10),
+                _buildDot(isActive: false), //nonaktif
+              ],
+            ),
+
+            const SizedBox(height: 50),
           ],
         ),
       ),
