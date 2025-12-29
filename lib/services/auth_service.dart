@@ -17,4 +17,9 @@ class AuthService {
       throw "Gagal login: $e";
     }
   }
+
+  // Fungsi Logout
+  Future<void> signOut() async {
+    await _auth.signOut();
+  }
 }
