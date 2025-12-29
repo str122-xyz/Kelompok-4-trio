@@ -89,4 +89,16 @@ class SplashZeinn extends StatelessWidget {
       ),
     );
   }
+
+  //fungsi indikator
+  Widget _buildDot({required bool isActive}) {
+    return Container(
+      width: isActive ? 12 : 8,
+      height: isActive ? 12 : 8,
+      decoration: BoxDecoration(
+        color: isActive ? Colors.white : Colors.white54,
+        shape: BoxShape.circle,
+      ),
+    );
+  }
 }
