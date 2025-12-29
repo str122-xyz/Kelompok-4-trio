@@ -33,6 +33,9 @@ class SplashZeinn extends StatelessWidget {
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       color: Colors.white,
+                      boxShadow: const [
+                        BoxShadow(color: Colors.white, blurRadius: 20),
+                      ],
                     ),
                   ),
                 ),
