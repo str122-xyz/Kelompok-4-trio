@@ -44,7 +44,7 @@ class SplashZeinn extends StatelessWidget {
                         color: Colors.white,
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.white.withOpacity(0.5),
+                            color: Colors.white.withOpacity(0.3),
                             blurRadius: 30,
                             spreadRadius: 2,
                           ),
