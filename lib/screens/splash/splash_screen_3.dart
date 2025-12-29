@@ -19,90 +19,101 @@ class _SplashEnzhoState extends State<SplashEnzho> {
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: [
-              Color.fromRGBO(0, 35, 53, 1),
-              Color(0xff3C6E71)
-            ],
+            colors: [Color.fromRGBO(0, 35, 53, 1), Color(0xff3C6E71)],
           ),
         ),
         child: SafeArea(
-            child: Column(
-                children: [
-                  Spacer(),
-                  Center(
-                    child: Material(
-                    color:Colors.transparent,
-                      child: InkWell(
-                        customBorder: const CircleBorder(),
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => const SplashScreenSadam()),
-                          );
-                        },
-                      
-                      child: Container(
-                        width: 250,
-                        height: 250,
-                        margin: EdgeInsets.all(10),
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: Colors.white,
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.white,
-                              blurRadius: 20,
-                            )
-                          ],
-                          image: DecorationImage(
-                            image: AssetImage("assets/images/logo2.png"),
-                            fit: BoxFit.cover
-                          )
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 10, top: 10),
+                child: Align(
+                  alignment: Alignment.topLeft,
+                  child: IconButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    icon: const Icon(
+                      Icons.arrow_back,
+                      color: Colors.white,
+                      size: 28,
+                    ),
+                  ),
+                ),
+              ),
+
+              Spacer(),
+
+              Center(
+                child: Material(
+                  color: Colors.transparent,
+                  child: InkWell(
+                    customBorder: const CircleBorder(),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const SplashScreenSadam(),
+                        ),
+                      );
+                    },
+
+                    child: Container(
+                      width: 250,
+                      height: 250,
+                      margin: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(color: Colors.white, blurRadius: 20),
+                        ],
+                        image: DecorationImage(
+                          image: AssetImage("assets/images/logo2.png"),
+                          fit: BoxFit.cover,
                         ),
                       ),
-                      ),
-                    )
-                  ),
-          
-                  SizedBox(height: 30,),
-          
-                  Text(
-                    'Ingpo Kampus',
-                    style: TextStyle(
-                      fontFamily: 'Poppins',
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
                     ),
                   ),
-          
-                  SizedBox(height: 10,),
-          
-                  Text(
-                    'Eksplorasi dunia kampus jadi lebih mudah. Gak bakal ketinggalan info penting lagi!',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontFamily: 'Poppins',
-                      color: Colors.white,
-                    ),
-                  ),
-          
-                  Spacer(),
-          
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      _buildDot(isActive: false), 
-                      const SizedBox(width: 10),
-                      _buildDot(isActive: true), 
-                      const SizedBox(width: 10),
-                      _buildDot(isActive: false), 
-                    ],
-                  ),
-          
-                  SizedBox(height: 50),
+                ),
+              ),
+
+              SizedBox(height: 30),
+
+              Text(
+                'Ingpo Kampus',
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+
+              SizedBox(height: 10),
+
+              Text(
+                'Eksplorasi dunia kampus jadi lebih mudah. Gak bakal ketinggalan info penting lagi!',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontFamily: 'Poppins', color: Colors.white),
+              ),
+
+              Spacer(),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  _buildDot(isActive: false),
+                  const SizedBox(width: 10),
+                  _buildDot(isActive: true),
+                  const SizedBox(width: 10),
+                  _buildDot(isActive: false),
                 ],
-            ),
+              ),
+
+              SizedBox(height: 50),
+            ],
+          ),
         ),
       ),
     );

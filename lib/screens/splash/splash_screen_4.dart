@@ -15,8 +15,25 @@ class _SplashScreenSadamState extends State<SplashScreenSadam> {
       body: SafeArea(
         child: Column(
           children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 10, top: 10),
+              child: Align(
+                alignment: Alignment.topLeft,
+                child: IconButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  icon: const Icon(
+                    Icons.arrow_back,
+                    color: Colors.white,
+                    size: 28,
+                  ),
+                ),
+              ),
+            ),
+
             const Spacer(),
-            
+
             Center(
               child: Material(
                 color: Colors.transparent,
@@ -92,11 +109,11 @@ class _SplashScreenSadamState extends State<SplashScreenSadam> {
             const SizedBox(height: 50),
           ],
         ),
-        ),
+      ),
     );
   }
-  
-   Widget _buildDot({required bool isActive}) {
+
+  Widget _buildDot({required bool isActive}) {
     return Container(
       width: isActive ? 12 : 10,
       height: isActive ? 12 : 10,
