@@ -14,7 +14,14 @@ class _ZeinnProfileState extends State<ZeinnProfile> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Color(0xFF29B6F6),
-        title: const Text("My Profile"),
+        title: const Text(
+          "My Profile",
+          style: TextStyle(
+            color: Colors.white,
+            fontFamily: 'Poppins',
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
     );
   }
