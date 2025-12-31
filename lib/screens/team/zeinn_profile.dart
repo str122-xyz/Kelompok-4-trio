@@ -71,7 +71,7 @@ class _ZeinnProfileState extends State<ZeinnProfile> {
                             ),
                             child: ClipOval(
                               child: Image.asset(
-                                'assets/images/zeinn.jpeg',
+                                'assets/images/zein_profil.jpeg',
                                 width: 80,
                                 height: 80,
                                 fit: BoxFit.cover,
