@@ -133,7 +133,14 @@ class _SatriahrlProfileState extends State<SatriahrlProfile> {
                           ),
                         ],
                       ),
-                      //sss
+
+                      const SizedBox(height: 24),
+                      // Line pemisah
+                      Divider(
+                        thickness: 1,
+                        color: Colors.purple[100]?.withOpacity(0.2),
+                      ),
+                      const SizedBox(height: 24),
                     ],
                   ),
                 ),
