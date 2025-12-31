@@ -24,6 +24,29 @@ class _SadamProfileState extends State<SadamProfile> {
             fontWeight: FontWeight.bold,
           ),
         ),
+
+         centerTitle: true,
+        leading: IconButton(
+          onPressed: () {
+            Navigator.popUntil(context, (route) => route.isFirst);
+          },
+          icon: const Icon(Icons.arrow_back, color: Colors.white),
+        ),
+      ),
+      body: Center(
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.all(20),
+          child: Column(
+            children: [
+              const Icon(
+                Icons.account_circle,
+                size: 50,
+                color: Colors.white54,
+              ),
+              const SizedBox(height: 10),
+            ]
+          ),
+    ),
     ),
     );
   }
