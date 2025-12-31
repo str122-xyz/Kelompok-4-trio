@@ -41,8 +41,8 @@ class _SatriahrlProfileState extends State<SatriahrlProfile> {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              Color(0xFFFF1744), // Red Accent (Aka)
-              Color(0xFF2962FF), // Blue Accent (Ao)
+              Color(0xFF880E4F), // Maroon keunguan
+              Color(0xFF1A237E), // Navy pekat
             ],
             stops: [0.2, 0.9],
           ),
@@ -54,7 +54,7 @@ class _SatriahrlProfileState extends State<SatriahrlProfile> {
 
               child: Card(
                 elevation: 20,
-                shadowColor: Colors.purpleAccent.withOpacity(0.6), // Glow ungu
+                shadowColor: Colors.purple.withOpacity(0.6), // Glow ungu
                 color: const Color(
                   0xFF4A148C,
                 ).withOpacity(0.9), // Ungu Gelap (Void)
@@ -79,16 +79,13 @@ class _SatriahrlProfileState extends State<SatriahrlProfile> {
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               gradient: const LinearGradient(
-                                colors: [
-                                  Colors.purpleAccent,
-                                  Colors.deepPurple,
-                                ],
+                                colors: [Colors.purple, Colors.deepPurple],
                                 begin: Alignment.topLeft,
                                 end: Alignment.bottomRight,
                               ),
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.purpleAccent.withOpacity(0.5),
+                                  color: Colors.purple.withOpacity(0.5),
                                   blurRadius: 15,
                                   spreadRadius: 2,
                                 ),
@@ -122,7 +119,7 @@ class _SatriahrlProfileState extends State<SatriahrlProfile> {
                                 Text(
                                   'Flutter Developer',
                                   style: TextStyle(
-                                    color: Colors.purpleAccent,
+                                    color: Colors.purple,
                                     fontFamily: 'Inter',
                                     fontWeight: FontWeight.w600,
                                     fontSize: 12.0,
