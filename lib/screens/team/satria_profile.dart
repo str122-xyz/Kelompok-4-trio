@@ -94,6 +94,14 @@ class _SatriahrlProfileState extends State<SatriahrlProfile> {
                                 ),
                               ],
                             ),
+                            child: ClipOval(
+                              child: Image.asset(
+                                'assets/images/satria.jpg',
+                                width: 85,
+                                height: 85,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
                           ),
                         ],
                       ),
