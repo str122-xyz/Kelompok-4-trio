@@ -65,6 +65,14 @@ class _SatriahrlProfileState extends State<SatriahrlProfile> {
                     width: 1.5,
                   ),
                 ),
+                child: Padding(
+                  padding: const EdgeInsets.all(24),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [],
+                  ),
+                ),
               ),
             ),
           ),
