@@ -55,6 +55,20 @@ class _ZeinnProfileState extends State<ZeinnProfile> {
                           fit: BoxFit.cover,
                         ),
                       ),
+
+                      SizedBox(width: 16),
+
+                      Expanded(
+                        child: Text(
+                          'Ahmad Zein Adli W.',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Poppins',
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ],
