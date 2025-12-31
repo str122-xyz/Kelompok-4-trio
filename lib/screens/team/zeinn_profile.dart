@@ -102,6 +102,26 @@ class _ZeinnProfileState extends State<ZeinnProfile> {
                           fontSize: 14,
                         ),
                       ),
+
+                      SizedBox(height: 10),
+
+                      Text(
+                        'Tentang Saya:',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Poppins',
+                          fontSize: 14,
+                        ),
+                      ),
+                      SizedBox(height: 6),
+                      Text(
+                        'Halo! Saya Ahmad Zein Adli W., Saya Mahasiswa Global Institute Jurusan Teknik Informatika yang memiliki minat besar dalam dunia teknologi dan pemrograman. Selain itu, saya juga menikmati hobi gaming dan memancing di waktu luang saya. Saya selalu bersemangat untuk belajar hal-hal baru dan berkontribusi dalam proyek-proyek yang menantang.',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Inter',
+                          fontSize: 14,
+                        ),
+                      ),
                     ],
                   ),
                 ],
