@@ -15,7 +15,17 @@ class _SatriahrlProfileState extends State<SatriahrlProfile> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title: const Text("My Profile"),
+        title: const Text(
+          "My Profile",
+          style: TextStyle(
+            color: Colors.white,
+            fontFamily: 'Poppins',
+            fontWeight: FontWeight.bold,
+            shadows: [
+              Shadow(color: Colors.black, blurRadius: 10, offset: Offset(0, 2)),
+            ],
+          ),
+        ),
       ),
     );
   }
