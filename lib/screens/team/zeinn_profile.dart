@@ -80,6 +80,19 @@ class _ZeinnProfileState extends State<ZeinnProfile> {
                           fontSize: 14,
                         ),
                       ),
+
+                      SizedBox(height: 10),
+
+                      Text(
+                        'Kelas: TI 23 SE 1',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Poppins',
+                          fontSize: 14,
+                        ),
+                      ),
+
+                      SizedBox(height: 10),
                     ],
                   ),
                 ],
