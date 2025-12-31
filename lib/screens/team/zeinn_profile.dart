@@ -42,7 +42,22 @@ class _ZeinnProfileState extends State<ZeinnProfile> {
               padding: EdgeInsetsGeometry.all(16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [],
+                children: [
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(8),
+                        child: Image.asset(
+                          'assets/images/',
+                          width: 80,
+                          height: 80,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
           ),
