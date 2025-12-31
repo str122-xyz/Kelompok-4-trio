@@ -186,4 +186,37 @@ class _SatriahrlProfileState extends State<SatriahrlProfile> {
       ),
     );
   }
+
+  // Fungsi Widget helper custom
+  Widget _buildInfoRow(String label, String value) {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        SizedBox(
+          width: 80,
+          child: Text(
+            label,
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.purple[200],
+              fontFamily: 'Poppins',
+              fontSize: 14,
+            ),
+          ),
+        ),
+        const Text(": ", style: TextStyle(color: Colors.white54)),
+        Expanded(
+          child: Text(
+            value,
+            style: const TextStyle(
+              color: Colors.white,
+              fontFamily: 'Inter',
+              fontWeight: FontWeight.w500,
+              fontSize: 14,
+            ),
+          ),
+        ),
+      ],
+    );
+  }
 }
