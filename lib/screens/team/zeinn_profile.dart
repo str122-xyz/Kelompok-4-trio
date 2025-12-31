@@ -96,7 +96,7 @@ class _ZeinnProfileState extends State<ZeinnProfile> {
                                 Text(
                                   'Mobile Developer',
                                   style: TextStyle(
-                                    color: Colors.grey,
+                                    color: Color(0xFF0277BD),
                                     fontFamily: 'Poppins',
                                     fontSize: 12,
                                   ),
@@ -161,7 +161,7 @@ class _ZeinnProfileState extends State<ZeinnProfile> {
             label,
             style: const TextStyle(
               fontWeight: FontWeight.bold,
-              color: Colors.grey,
+              color: Color(0xFF29B6F6),
               fontFamily: 'Poppins',
               fontSize: 14,
             ),
