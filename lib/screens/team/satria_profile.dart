@@ -11,10 +11,11 @@ class _SatriahrlProfileState extends State<SatriahrlProfile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Dashboard"), actions: const []),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(10.0),
-        child: Column(children: []),
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        title: const Text("My Profile"),
       ),
     );
   }
