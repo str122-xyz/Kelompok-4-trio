@@ -76,7 +76,7 @@ class _SadamProfileState extends State<SadamProfile> {
                                   'Sadam Irham Marami',
                                   style: TextStyle(
                                     color: Color(0xff284B63), 
-                                    fontFamily: 'Inter',
+                                    fontFamily: 'Inter', 
                                     fontSize: 20,
                                     fontWeight: FontWeight.bold,
                                   ),
@@ -86,8 +86,28 @@ class _SadamProfileState extends State<SadamProfile> {
                 ),
                 ),
                         ]
-            ),
-             ]
+                ),
+             Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                            decoration: BoxDecoration(
+                            color: const Color(0xff284B63).withOpacity(0.1),
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                            child: const Text(
+                            "Mobile Developer",
+                            style: TextStyle(
+                            color: Color(0xff284B63),
+                            fontSize: 12,
+                            fontFamily: 'Inter',
+                            fontWeight: FontWeight.w600
+                            
+                  ),
+                  ),
+                  ),
+                    const SizedBox(height: 25),
+                      const Divider(),
+                      const SizedBox(height: 15),
+                  ]
               ),
             ),
             ),
