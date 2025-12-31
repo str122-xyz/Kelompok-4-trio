@@ -11,10 +11,10 @@ class _ZeinnProfileState extends State<ZeinnProfile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Dashboard"), actions: const []),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(10.0),
-        child: Column(children: []),
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Color(0xFF29B6F6),
+        title: const Text("My Profile"),
       ),
     );
   }
