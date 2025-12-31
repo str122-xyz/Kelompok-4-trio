@@ -140,6 +140,16 @@ class _SatriahrlProfileState extends State<SatriahrlProfile> {
                         thickness: 1,
                         color: Colors.purple[100]?.withOpacity(0.2),
                       ),
+
+                      const SizedBox(height: 24),
+                      _buildInfoRow("NIM", "1123150070"),
+                      const SizedBox(height: 12),
+                      _buildInfoRow("Kelas", "TI 23 SE 1"),
+                      const SizedBox(height: 12),
+                      _buildInfoRow(
+                        "Keahlian",
+                        "Flutter, Laravel, dart, PHP, JavaScript, C++",
+                      ),
                       const SizedBox(height: 24),
                     ],
                   ),
