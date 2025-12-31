@@ -54,10 +54,8 @@ class _SatriahrlProfileState extends State<SatriahrlProfile> {
 
               child: Card(
                 elevation: 20,
-                shadowColor: Colors.purple.withOpacity(0.6), // Glow ungu
-                color: const Color(
-                  0xFF4A148C,
-                ).withOpacity(0.9), // Ungu Gelap (Void)
+                shadowColor: Colors.purple.withOpacity(0.6),
+                color: const Color(0xFF4A148C).withOpacity(0.9),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                   side: BorderSide(
