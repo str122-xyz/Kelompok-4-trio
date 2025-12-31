@@ -55,11 +55,41 @@ class _SadamProfileState extends State<SadamProfile> {
                   padding: const EdgeInsets.all(20),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                    ]
+                    children: [  Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(50), // Foto Bulat
+                            child: Image.asset(
+                              'assets/images/foto_sadam.jpg',
+                               width: 80,
+                              height: 80,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          const SizedBox(width: 16),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const Text(
+                                  'Sadam Irham Marami',
+                                  style: TextStyle(
+                                    color: Color(0xff284B63), 
+                                    fontFamily: 'Inter',
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                const SizedBox(height: 4),
+                        ]
+                ),
+                ),
+                        ]
             ),
+             ]
+              ),
             ),
-            
             ),
             ] 
           ),
