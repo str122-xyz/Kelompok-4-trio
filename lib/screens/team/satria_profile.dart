@@ -140,8 +140,8 @@ class _SatriahrlProfileState extends State<SatriahrlProfile> {
                         thickness: 1,
                         color: Colors.purple[100]?.withOpacity(0.2),
                       ),
-
                       const SizedBox(height: 24),
+
                       _buildInfoRow("NIM", "1123150070"),
                       const SizedBox(height: 12),
                       _buildInfoRow("Kelas", "TI 23 SE 1"),
@@ -150,7 +150,32 @@ class _SatriahrlProfileState extends State<SatriahrlProfile> {
                         "Keahlian",
                         "Flutter, Laravel, dart, PHP, JavaScript, C++",
                       ),
+
                       const SizedBox(height: 24),
+
+                      const Text(
+                        'Tentang Saya:',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                          shadows: [
+                            Shadow(color: Colors.purple, blurRadius: 10),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      const Text(
+                        'Hola! Saya Satria Herlambang, Saya Mahasiswa Global Institute Jurusan Teknik Informatika yang memiliki minat dan kemampuan dalam berbagai bahasa pemograman, saya juga selalu bersemangat mempelajari hal-hal baru guna meningkatkan kualitas kerja dan kontribusi di industri teknologi.',
+                        style: TextStyle(
+                          color: Colors.white70,
+                          fontFamily: 'Inter',
+                          fontSize: 13,
+                          height: 1.6,
+                        ),
+                        textAlign: TextAlign.justify,
+                      ),
                     ],
                   ),
                 ),
