@@ -32,11 +32,11 @@ class _SadamProfileState extends State<SadamProfile> {
           },
           icon: const Icon(Icons.arrow_back, color: Colors.white),
         ),
-      ),
-      body: Center(
+        ),
+        body: Center(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.all(20),
-          child: Column(
+             padding: const EdgeInsets.all(20),
+            child: Column(
             children: [
               const Icon(
                 Icons.account_circle,
@@ -44,10 +44,28 @@ class _SadamProfileState extends State<SadamProfile> {
                 color: Colors.white54,
               ),
               const SizedBox(height: 10),
-            ]
+            
+               Card(
+                color: Colors.white, 
+                elevation: 8,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                    ]
+            ),
+            ),
+            
+            ),
+            ] 
           ),
     ),
     ),
     );
+    
   }
 }
