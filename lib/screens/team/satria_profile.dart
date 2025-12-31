@@ -26,6 +26,12 @@ class _SatriahrlProfileState extends State<SatriahrlProfile> {
             ],
           ),
         ),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.popUntil(context, (route) => route.isFirst);
+          },
+          icon: const Icon(Icons.arrow_back_ios, color: Colors.white),
+        ),
       ),
     );
   }
