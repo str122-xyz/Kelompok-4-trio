@@ -69,60 +69,60 @@ class _ZeinnProfileState extends State<ZeinnProfile> {
                           ),
                         ),
                       ),
-
-                      SizedBox(height: 20),
-
-                      Text(
-                        'NIM: 1123150029',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'Poppins',
-                          fontSize: 14,
-                        ),
-                      ),
-
-                      SizedBox(height: 10),
-
-                      Text(
-                        'Kelas: TI 23 SE 1',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'Poppins',
-                          fontSize: 14,
-                        ),
-                      ),
-
-                      SizedBox(height: 10),
-
-                      Text(
-                        'Hobi: Gaming dan Mancing',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'Poppins',
-                          fontSize: 14,
-                        ),
-                      ),
-
-                      SizedBox(height: 10),
-
-                      Text(
-                        'Tentang Saya:',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'Poppins',
-                          fontSize: 14,
-                        ),
-                      ),
-                      SizedBox(height: 6),
-                      Text(
-                        'Halo! Saya Ahmad Zein Adli W., Saya Mahasiswa Global Institute Jurusan Teknik Informatika yang memiliki minat besar dalam dunia teknologi dan pemrograman. Selain itu, saya juga menikmati hobi gaming dan memancing di waktu luang saya. Saya selalu bersemangat untuk belajar hal-hal baru dan berkontribusi dalam proyek-proyek yang menantang.',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'Inter',
-                          fontSize: 14,
-                        ),
-                      ),
                     ],
+                  ),
+
+                  SizedBox(height: 20),
+
+                  Text(
+                    'NIM: 1123150029',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Poppins',
+                      fontSize: 14,
+                    ),
+                  ),
+
+                  SizedBox(height: 10),
+
+                  Text(
+                    'Kelas: TI 23 SE 1',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Poppins',
+                      fontSize: 14,
+                    ),
+                  ),
+
+                  SizedBox(height: 10),
+
+                  Text(
+                    'Hobi: Gaming dan Mancing',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Poppins',
+                      fontSize: 14,
+                    ),
+                  ),
+
+                  SizedBox(height: 10),
+
+                  Text(
+                    'Tentang Saya:',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Poppins',
+                      fontSize: 14,
+                    ),
+                  ),
+                  SizedBox(height: 6),
+                  Text(
+                    'Halo! Saya Ahmad Zein Adli W., Saya Mahasiswa Global Institute Jurusan Teknik Informatika yang memiliki minat besar dalam dunia teknologi dan pemrograman. Selain itu, saya juga menikmati hobi gaming dan memancing di waktu luang saya. Saya selalu bersemangat untuk belajar hal-hal baru dan berkontribusi dalam proyek-proyek yang menantang.',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Inter',
+                      fontSize: 14,
+                    ),
                   ),
                 ],
               ),
