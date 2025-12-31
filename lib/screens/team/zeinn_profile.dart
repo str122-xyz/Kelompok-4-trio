@@ -30,6 +30,24 @@ class _ZeinnProfileState extends State<ZeinnProfile> {
           icon: Icon(Icons.arrow_back, color: Colors.white),
         ),
       ),
+      body: Center(
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.all(16),
+          child: Card(
+            color: Color(0xFF29B6F6),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Padding(
+              padding: EdgeInsetsGeometry.all(16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [],
+              ),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
