@@ -49,7 +49,24 @@ class _SatriahrlProfileState extends State<SatriahrlProfile> {
         ),
         child: SafeArea(
           child: Center(
-            child: SingleChildScrollView(padding: const EdgeInsets.all(20)),
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.all(20),
+
+              child: Card(
+                elevation: 20,
+                shadowColor: Colors.purpleAccent.withOpacity(0.6), // Glow ungu
+                color: const Color(
+                  0xFF4A148C,
+                ).withOpacity(0.9), // Ungu Gelap (Void)
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                  side: BorderSide(
+                    color: Colors.white.withOpacity(0.3),
+                    width: 1.5,
+                  ),
+                ),
+              ),
+            ),
           ),
         ),
       ),
