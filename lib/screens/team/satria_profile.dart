@@ -103,8 +103,37 @@ class _SatriahrlProfileState extends State<SatriahrlProfile> {
                               ),
                             ),
                           ),
+                          const SizedBox(height: 16),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  'Satria Herlambang',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontFamily: 'Poppins',
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    letterSpacing: 1,
+                                  ),
+                                ),
+                                SizedBox(height: 4),
+                                Text(
+                                  'Flutter Developer',
+                                  style: TextStyle(
+                                    color: Colors.purpleAccent,
+                                    fontFamily: 'Inter',
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 12.0,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
+                      //sss
                     ],
                   ),
                 ),
