@@ -47,6 +47,11 @@ class _SatriahrlProfileState extends State<SatriahrlProfile> {
             stops: [0.2, 0.9],
           ),
         ),
+        child: SafeArea(
+          child: Center(
+            child: SingleChildScrollView(padding: const EdgeInsets.all(20)),
+          ),
+        ),
       ),
     );
   }
