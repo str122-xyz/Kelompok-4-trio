@@ -33,6 +33,21 @@ class _SatriahrlProfileState extends State<SatriahrlProfile> {
           icon: const Icon(Icons.arrow_back_ios, color: Colors.white),
         ),
       ),
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              Color(0xFFFF1744), // Red Accent (Aka)
+              Color(0xFF2962FF), // Blue Accent (Ao)
+            ],
+            stops: [0.2, 0.9],
+          ),
+        ),
+      ),
     );
   }
 }
