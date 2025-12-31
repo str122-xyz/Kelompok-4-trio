@@ -22,6 +22,13 @@ class _ZeinnProfileState extends State<ZeinnProfile> {
             fontWeight: FontWeight.bold,
           ),
         ),
+        centerTitle: true,
+        leading: IconButton(
+          onPressed: () {
+            Navigator.popUntil(context, (route) => route.isFirst);
+          },
+          icon: Icon(Icons.arrow_back, color: Colors.white),
+        ),
       ),
     );
   }
