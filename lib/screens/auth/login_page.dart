@@ -57,6 +57,34 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Logo dan Judul
+              const Center(
+                child: Icon(
+                  Icons.lock_person,
+                  size: 80,
+                  color: Color(0xFF353535),
+                ),
+              ),
+
+              const SizedBox(height: 20),
+
+              const Text(
+                "Welcome Back!",
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  fontSize: 28,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xFF353535),
+                ),
+              ),
+              const Text(
+                "Masuk untuk akses Ingpoglb",
+                style: TextStyle(color: Colors.grey, fontFamily: 'Poppins'),
+              ),
+
+              const SizedBox(height: 40),
+            ],
           ),
         ),
       ),
