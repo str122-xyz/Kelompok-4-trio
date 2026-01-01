@@ -77,15 +77,15 @@ class _LoginPageState extends State<LoginPage> {
                 children: [
                   Center(
                     child: Container(
-                      padding: const EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(15),
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         color: Colors.white.withOpacity(0.1),
                       ),
                       child: Lottie.asset(
                         'assets/animations/login_animation.json',
-                        width: 180,
-                        height: 180,
+                        width: 150,
+                        height: 150,
                         fit: BoxFit.contain,
                       ),
                     ),
@@ -93,21 +93,30 @@ class _LoginPageState extends State<LoginPage> {
 
                   const SizedBox(height: 20),
 
-                  const Text(
-                    "Welcome Back!",
-                    style: TextStyle(
-                      fontFamily: 'Poppins',
-                      fontSize: 32,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                  const Center(
+                    child: Text(
+                      "Welcome Selamat Datang",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
-                  Text(
-                    "Masuk untuk akses Ingpoglb",
-                    style: TextStyle(
-                      color: Colors.white.withOpacity(0.8),
-                      fontFamily: 'Poppins',
-                      fontSize: 16,
+
+                  const SizedBox(height: 5),
+
+                  Center(
+                    child: Text(
+                      "Masuk untuk akses Ingpoglb",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.white.withOpacity(0.8),
+                        fontFamily: 'Poppins',
+                        fontSize: 14,
+                      ),
                     ),
                   ),
 
