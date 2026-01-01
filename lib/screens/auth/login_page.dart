@@ -98,6 +98,20 @@ class _LoginPageState extends State<LoginPage> {
               ),
 
               const SizedBox(height: 20),
+
+              //Form Password
+              TextField(
+                controller: _passwordController,
+                obscureText: true,
+                decoration: InputDecoration(
+                  labelText: "password",
+                  prefixIcon: const Icon(Icons.lock_outline),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 30),
             ],
           ),
         ),
