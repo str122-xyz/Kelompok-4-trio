@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart'; // Import Lottie
 import 'package:kelompok4_app_mobile/screens/dashboard/dashboard.dart';
 import 'package:kelompok4_app_mobile/services/auth_service.dart';
 
@@ -14,6 +15,7 @@ class _LoginPageState extends State<LoginPage> {
   final _passwordController = TextEditingController();
   final AuthService _authService = AuthService(); // auth service
   bool _isLoading = false;
+  bool _isObscure = true;
 
   void _handleLogin() async {
     //validasi input kosong
