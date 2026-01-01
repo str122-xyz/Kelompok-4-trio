@@ -41,7 +41,7 @@ class _SplashScreenSadamState extends State<SplashScreenSadam> {
                 child: InkWell(
                   customBorder: const CircleBorder(),
                   onTap: () {
-                    Navigator.pushReplacement(
+                    Navigator.push(
                       context,
                       MaterialPageRoute(
                         builder: (context) => const LoginPage(),
