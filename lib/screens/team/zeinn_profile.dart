@@ -111,7 +111,7 @@ class _ZeinnProfileState extends State<ZeinnProfile> {
                       const Divider(thickness: 1, color: Color(0xFFE0E0E0)),
                       const SizedBox(height: 24),
 
-                      _buildInfoRow("NIM", "1123150029"),
+                      _buildInfoRow("NIM", "1123150028"),
                       const SizedBox(height: 12),
                       _buildInfoRow("Kelas", "TI 23 SE 1"),
                       const SizedBox(height: 12),

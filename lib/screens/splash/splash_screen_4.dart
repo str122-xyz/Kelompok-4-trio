@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kelompok4_app_mobile/screens/team/enzho_profile.dart';
-import 'package:kelompok4_app_mobile/screens/team/zeinn_profile.dart';
-import 'package:kelompok4_app_mobile/screens/team/satria_profile.dart';
+import 'package:kelompok4_app_mobile/screens/auth/login_page.dart';
 
 class SplashScreenSadam extends StatefulWidget {
   const SplashScreenSadam({super.key});
@@ -42,12 +40,11 @@ class _SplashScreenSadamState extends State<SplashScreenSadam> {
                 color: Colors.transparent,
                 child: InkWell(
                   customBorder: const CircleBorder(),
-                  // Todo ke Login Page
                   onTap: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SatriahrlProfile(),
+                        builder: (context) => const LoginPage(),
                       ),
                     );
                   },
