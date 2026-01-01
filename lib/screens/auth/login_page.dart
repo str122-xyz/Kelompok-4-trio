@@ -83,7 +83,7 @@ class _LoginPageState extends State<LoginPage> {
                         color: Colors.white.withOpacity(0.1),
                       ),
                       child: Lottie.asset(
-                        'assets/animations/login_anim.json',
+                        'assets/animations/login_animation.json',
                         width: 180,
                         height: 180,
                         fit: BoxFit.contain,
