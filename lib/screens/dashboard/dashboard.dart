@@ -11,10 +11,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Dashboard"), actions: const []),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(10.0),
-        child: Column(children: []),
+      appBar: AppBar(
+        title: const Text("Dashboard"),
+        automaticallyImplyLeading: false,
       ),
     );
   }
