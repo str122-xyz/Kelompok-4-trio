@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:kelompok4_app_mobile/screens/splash/splash_screen_4.dart';
+import 'package:kelompok4_app_mobile/screens/splash/splash_screen_3.dart';
 
-class SplashEnzho extends StatefulWidget {
-  const SplashEnzho({super.key});
+class SplashZeinn extends StatelessWidget {
+  const SplashZeinn({super.key});
 
-  @override
-  State<SplashEnzho> createState() => _SplashEnzhoState();
-}
-
-class _SplashEnzhoState extends State<SplashEnzho> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,30 +14,13 @@ class _SplashEnzhoState extends State<SplashEnzho> {
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: [Color.fromRGBO(0, 35, 53, 1), Color(0xff3C6E71)],
+            colors: [Color(0xFF29B6F6), Color(0xFF0277BD)],
           ),
         ),
         child: SafeArea(
           child: Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 10, top: 10),
-                child: Align(
-                  alignment: Alignment.topLeft,
-                  child: IconButton(
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                    icon: const Icon(
-                      Icons.arrow_back,
-                      color: Colors.white,
-                      size: 28,
-                    ),
-                  ),
-                ),
-              ),
-
-              Spacer(),
+              const Spacer(),
 
               Center(
                 child: Material(
@@ -53,23 +31,26 @@ class _SplashEnzhoState extends State<SplashEnzho> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const SplashScreenSadam(),
+                          builder: (context) => const SplashEnzho(),
                         ),
                       );
                     },
-
                     child: Container(
                       width: 250,
                       height: 250,
-                      margin: EdgeInsets.all(10),
+                      margin: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         color: Colors.white,
                         boxShadow: [
-                          BoxShadow(color: Colors.white, blurRadius: 20),
+                          BoxShadow(
+                            color: Colors.white.withOpacity(0.3),
+                            blurRadius: 30,
+                            spreadRadius: 2,
+                          ),
                         ],
-                        image: DecorationImage(
-                          image: AssetImage("assets/images/logo2.png"),
+                        image: const DecorationImage(
+                          image: AssetImage("assets/images/logo4.png"),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -78,40 +59,44 @@ class _SplashEnzhoState extends State<SplashEnzho> {
                 ),
               ),
 
-              SizedBox(height: 30),
+              const SizedBox(height: 30),
 
-              Text(
-                'Ingpo Kampus',
+              const Text(
+                "Ingpo Kampus",
                 style: TextStyle(
                   fontFamily: 'Poppins',
-                  fontSize: 24,
+                  fontSize: 24.0,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
               ),
 
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
 
-              Text(
-                'Eksplorasi dunia kampus jadi lebih mudah. Gak bakal ketinggalan info penting lagi!',
+              const Text(
+                "Terupdate",
                 textAlign: TextAlign.center,
-                style: TextStyle(fontFamily: 'Poppins', color: Colors.white),
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  fontSize: 16.0,
+                  color: Colors.white,
+                ),
               ),
 
-              Spacer(),
-
+              const Spacer(),
+              //Indikator
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  _buildDot(isActive: false),
+                  _buildDot(isActive: true), //aktif
                   const SizedBox(width: 10),
-                  _buildDot(isActive: true),
+                  _buildDot(isActive: false), //nonaktif
                   const SizedBox(width: 10),
-                  _buildDot(isActive: false),
+                  _buildDot(isActive: false), //nonaktif
                 ],
               ),
 
-              SizedBox(height: 50),
+              const SizedBox(height: 50),
             ],
           ),
         ),
@@ -119,13 +104,14 @@ class _SplashEnzhoState extends State<SplashEnzho> {
     );
   }
 
+  //fungsi indikator
   Widget _buildDot({required bool isActive}) {
     return Container(
       width: isActive ? 12 : 10,
       height: isActive ? 12 : 10,
       decoration: BoxDecoration(
+        color: isActive ? Colors.white : Colors.white54,
         shape: BoxShape.circle,
-        color: isActive ? Colors.white : const Color(0xFFD9D9D9),
       ),
     );
   }

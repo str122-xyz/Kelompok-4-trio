@@ -16,6 +16,23 @@ class _SplashScreenSadamState extends State<SplashScreenSadam> {
       body: SafeArea(
         child: Column(
           children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 10, top: 10),
+              child: Align(
+                alignment: Alignment.topLeft,
+                child: IconButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  icon: const Icon(
+                    Icons.arrow_back,
+                    color: Colors.white,
+                    size: 28,
+                  ),
+                ),
+              ),
+            ),
+
             const Spacer(),
 
             Center(
@@ -24,7 +41,7 @@ class _SplashScreenSadamState extends State<SplashScreenSadam> {
                 child: InkWell(
                   customBorder: const CircleBorder(),
                   onTap: () {
-                    Navigator.push(
+                    Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
                         builder: (context) => const LoginPage(),
