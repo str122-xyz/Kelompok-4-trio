@@ -58,7 +58,7 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Logo dan Judul
+              //Logo dan Judul
               const Center(
                 child: Icon(
                   Icons.lock_person,
@@ -84,6 +84,20 @@ class _LoginPageState extends State<LoginPage> {
               ),
 
               const SizedBox(height: 40),
+
+              //Form Email
+              TextField(
+                controller: _emailController,
+                decoration: InputDecoration(
+                  labelText: "Email",
+                  prefixIcon: const Icon(Icons.email_outlined),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 20),
             ],
           ),
         ),
