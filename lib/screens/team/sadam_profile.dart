@@ -62,7 +62,7 @@ class _SadamProfileState extends State<SadamProfile> {
                           ClipRRect(
                             borderRadius: BorderRadius.circular(50),
                             child: Image.asset(
-                              'assets/images/foto_sadam.jpg',
+                              'assets/images/sadam_profile.jpg',
                               width: 80,
                               height: 80,
                               fit: BoxFit.cover,
