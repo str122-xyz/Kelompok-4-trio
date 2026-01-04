@@ -324,6 +324,27 @@ class _HomePageState extends State<HomePage> {
               fontFamily: 'Poppins',
             ),
           ),
+          const SizedBox(height: 10),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 40),
+            child: Text(
+              "hy kamu lanjutin",
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.grey),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  // Widget Halaman Pengaturan
+
+  Widget _buildSettingsContent() {
+    return Padding(
+      padding: const EdgeInsets.all(20.0),
+      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          
         ],
       ),
     );
