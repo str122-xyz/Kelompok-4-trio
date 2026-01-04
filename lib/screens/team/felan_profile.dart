@@ -167,7 +167,11 @@ class _FelanProfileState extends State<FelanProfile> {
                   ],
                 ),
 
-                SizedBox(height: 16),
+                SizedBox(height: 8),
+
+                Divider(color: Colors.white24),
+
+                SizedBox(height: 8),
 
                 Align(
                   alignment: Alignment.centerLeft,
