@@ -4,4 +4,10 @@ class MyTeam {
   String nama;
   String pathPhoto;
   String route;
+
+  MyTeam({
+    required this.nama,
+    required this.pathPhoto,
+    required this.route,
+  });
 }
