@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kelompok4_app_mobile/screens/auth/login_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -41,6 +42,17 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       _selectedIndex = index;
     });
+  }
+
+  // Fungsi Logout
+  void _handleLogout() async {
+    await _authService.signOut();
+    if (mounted) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const LoginPage()),
+      );
+    }
   }
 
   @override
