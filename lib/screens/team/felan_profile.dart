@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
 class FelanProfile extends StatefulWidget {
+  static const routeName = '/profileFelan';
   const FelanProfile({super.key});
 
   @override
