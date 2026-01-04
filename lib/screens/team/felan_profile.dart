@@ -20,10 +20,10 @@ class _FelanProfileState extends State<FelanProfile> {
           ),
           child: Container(
             width: 340,
-            padding: const EdgeInsets.all(20),
+            padding: EdgeInsets.all(20),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              gradient: const LinearGradient(
+              gradient: LinearGradient(
                 colors: [Color(0xFF1E293B), Color(0xFF020617)],
               ),
             ),
