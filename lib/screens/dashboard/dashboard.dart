@@ -251,6 +251,18 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
+
+          const SizedBox(height: 25),
+
+          // Menu grid
+          const Text(
+            "Menu",
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              fontFamily: 'Poppins',
+            ),
+          ),
         ],
       ),
     );
