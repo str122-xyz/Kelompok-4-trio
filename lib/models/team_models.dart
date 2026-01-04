@@ -10,4 +10,10 @@ class MyTeam {
     required this.pathPhoto,
     required this.route,
   });
+
+  static List<MyTeam> getTeams() {
+    List<MyTeam> teams = [];
+
+  }
+
 }
