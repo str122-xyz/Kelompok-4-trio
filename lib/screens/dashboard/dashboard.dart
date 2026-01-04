@@ -24,6 +24,25 @@ class _HomePageState extends State<HomePage> {
     return _memberNames[email] ?? 'Guest'; // Default jadi guest
   }
 
+  // List Halaman untuk Bottom Navigation
+  late final List<Widget> _pages;
+
+  @override
+  void initState() {
+    super.initState();
+    _pages = [
+      _buildHomeContent(), // Halaman 0: Home Portal
+      _buildTeamContent(), // Halaman 1: Team
+      _buildSettingsContent(), // Halaman 2: Settings
+    ];
+  }
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
