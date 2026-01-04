@@ -36,21 +36,20 @@ class _FelanProfileState extends State<FelanProfile> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     CircleAvatar(
-                      radius: 45,
+                      radius: 42,
                       backgroundImage: AssetImage(
                         'assets/images/felan_profile.jpeg',
                       ),
                     ),
 
-                    SizedBox(width: 20),
+                    SizedBox(width: 16),
 
                     SizedBox(
-                      height: 80,
+                      height: 70,
                       child: ClipRRect(
-                        borderRadius: BorderRadius.circular(16),
+                        borderRadius: BorderRadius.circular(14),
                         child: Lottie.asset(
                           'assets/animations/UIUX Designer.json',
-                          fit: BoxFit.cover,
                         ),
                       ),
                     ),
@@ -63,17 +62,25 @@ class _FelanProfileState extends State<FelanProfile> {
                   'Felan Ardenta Yoga',
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
+                    fontSize: 22,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: 0.5,
                   ),
                 ),
 
                 SizedBox(height: 4),
 
-                Text(
-                  'NIM: 1123150086\nKelas: T1-23-SH',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.white70, fontSize: 14),
+                Container(
+                  margin: EdgeInsets.only(top: 6),
+                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Text(
+                    'NIM: 1123150086  •  Kelas: T1-23-SH',
+                    style: TextStyle(color: Colors.white, fontSize: 13),
+                  ),
                 ),
 
                 SizedBox(height: 12),
