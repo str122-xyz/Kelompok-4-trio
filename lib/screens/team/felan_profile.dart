@@ -31,14 +31,17 @@ class _FelanProfileState extends State<FelanProfile> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                CircleAvatar(
-                  radius: 45,
-                  backgroundImage: AssetImage('assets/images/felan_profile.jpeg'),
-                ),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    CircleAvatar(
+                      radius: 45,
+                      backgroundImage: AssetImage('assets/images/felan_profile.jpeg'),
+                    ),
 
-                SizedBox(height: 20),
+                  SizedBox(width: 20,),
 
-                SizedBox(
+                    SizedBox(
                   height: 80,
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(16),
@@ -47,6 +50,8 @@ class _FelanProfileState extends State<FelanProfile> {
                       fit: BoxFit.cover,
                     ),
                   ),
+                ),
+                  ],
                 ),
 
                 SizedBox(height: 20),
