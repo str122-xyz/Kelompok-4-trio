@@ -343,8 +343,18 @@ class _HomePageState extends State<HomePage> {
   Widget _buildSettingsContent() {
     return Padding(
       padding: const EdgeInsets.all(20.0),
-      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text(
+            "Pengaturan",
+            style: TextStyle(
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+              fontFamily: 'Poppins',
+            ),
+          ),
+          const SizedBox(height: 20),
         ],
       ),
     );
