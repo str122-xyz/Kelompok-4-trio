@@ -3,6 +3,7 @@ import 'package:flutter/gestures.dart';
 import 'package:firebase_core/firebase_core.dart'; //Important
 import 'package:kelompok4_app_mobile/screens/splash/splash_screen1.dart';
 import 'package:kelompok4_app_mobile/screens/team/felan_profile.dart';
+import 'package:kelompok4_app_mobile/screens/team/satria_profile.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
       home: const SplashScreen1(),
       routes: {
         FelanProfile.routeName: (_) => FelanProfile(),
+        SatriahrlProfile.routeName: (_) => SatriahrlProfile(),
         // tambah route lu di sini
       },
     );
