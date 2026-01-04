@@ -45,21 +45,24 @@ class _FelanProfileState extends State<FelanProfile> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    CircleAvatar(
-                      radius: 42,
-                      backgroundImage: AssetImage(
-                        'assets/images/felan_profile.jpeg',
+                    Padding(
+                      padding: const EdgeInsets.only(top: 28),
+                      child: CircleAvatar(
+                        radius: 38,
+                        backgroundImage: AssetImage(
+                          'assets/images/felan_profile.jpeg',
+                        ),
                       ),
                     ),
 
                     SizedBox(width: 16),
 
                     SizedBox(
-                      height: 70,
+                      height: 100,
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(14),
                         child: Lottie.asset(
-                          'assets/animations/UIUX Designer.json',
+                          'assets/animations/web designer.json',
                         ),
                       ),
                     ),
