@@ -28,7 +28,7 @@ class SplashZeinn extends StatelessWidget {
                   child: InkWell(
                     customBorder: const CircleBorder(),
                     onTap: () {
-                      Navigator.push(
+                      Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
                           builder: (context) => const SplashEnzho(),

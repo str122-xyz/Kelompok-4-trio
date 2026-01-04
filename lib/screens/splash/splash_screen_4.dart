@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:kelompok4_app_mobile/screens/auth/login_page.dart';
-import 'package:kelompok4_app_mobile/screens/dashboard/dashboard.dart';
-import 'package:kelompok4_app_mobile/screens/team/felan_profile.dart';
-import 'package:kelompok4_app_mobile/screens/team/sadam_profile.dart';
-import 'package:kelompok4_app_mobile/screens/team/satria_profile.dart';
-import 'package:kelompok4_app_mobile/screens/team/zeinn_profile.dart';
 
 class SplashScreenSadam extends StatefulWidget {
   const SplashScreenSadam({super.key});
@@ -21,23 +16,6 @@ class _SplashScreenSadamState extends State<SplashScreenSadam> {
       body: SafeArea(
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 10, top: 10),
-              child: Align(
-                alignment: Alignment.topLeft,
-                child: IconButton(
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                  icon: const Icon(
-                    Icons.arrow_back,
-                    color: Colors.white,
-                    size: 28,
-                  ),
-                ),
-              ),
-            ),
-
             const Spacer(),
 
             Center(
@@ -46,11 +24,10 @@ class _SplashScreenSadamState extends State<SplashScreenSadam> {
                 child: InkWell(
                   customBorder: const CircleBorder(),
                   onTap: () {
-                    Navigator.push(
+                    Navigator.pushAndRemoveUntil(
                       context,
-                      MaterialPageRoute(
-                        builder: (context) => const SadamProfile(),
-                      ),
+                      MaterialPageRoute(builder: (_) => const LoginPage()),
+                      (_) => false,
                     );
                   },
                   child: Container(
