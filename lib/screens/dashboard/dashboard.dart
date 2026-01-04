@@ -306,4 +306,15 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
+
+  //  Widget Halaman Team
+
+  Widget _buildTeamContent() {
+    return Center(
+      child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+
+        ],
+      ),
+    );
+  }
 }
