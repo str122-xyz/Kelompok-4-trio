@@ -12,7 +12,7 @@ class _FelanProfileState extends State<FelanProfile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:Color(0xFF63ADF2),
+      backgroundColor: Color(0xFF63ADF2),
       body: Center(
         child: Card(
           elevation: 12,
@@ -37,21 +37,23 @@ class _FelanProfileState extends State<FelanProfile> {
                   children: [
                     CircleAvatar(
                       radius: 45,
-                      backgroundImage: AssetImage('assets/images/felan_profile.jpeg'),
+                      backgroundImage: AssetImage(
+                        'assets/images/felan_profile.jpeg',
+                      ),
                     ),
 
-                  SizedBox(width: 20,),
+                    SizedBox(width: 20),
 
                     SizedBox(
-                  height: 80,
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(16),
-                    child: Lottie.asset(
-                      'assets/animations/UIUX Designer.json',
-                      fit: BoxFit.cover,
+                      height: 80,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(16),
+                        child: Lottie.asset(
+                          'assets/animations/UIUX Designer.json',
+                          fit: BoxFit.cover,
+                        ),
+                      ),
                     ),
-                  ),
-                ),
                   ],
                 ),
 
@@ -145,13 +147,10 @@ class _FelanProfileState extends State<FelanProfile> {
                     ),
 
                     SizedBox(width: 8),
-
-                    
-                  ]
-                )
-                
-              ]
-            )
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),
