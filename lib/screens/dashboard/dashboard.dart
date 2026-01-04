@@ -368,6 +368,9 @@ class _HomePageState extends State<HomePage> {
             ),
             subtitle: Text(currentUser?.email ?? ''),
           ),
+
+          const Divider(),
+          const SizedBox(height: 20),
         ],
       ),
     );
