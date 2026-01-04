@@ -25,7 +25,7 @@ class _FelanProfileState extends State<FelanProfile> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               gradient: LinearGradient(
-                colors: [Color(0xFF1E293B), Color(0xFF020617)],
+                colors: [Color(0xFF82A0BC), Color(0xFFA7CCED)],
               ),
             ),
             child: Column(
