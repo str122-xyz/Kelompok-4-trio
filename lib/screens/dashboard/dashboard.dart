@@ -12,6 +12,12 @@ class _HomePageState extends State<HomePage> {
   final AuthService _authService = AuthService();
   User? currentUser = FirebaseAuth.instance.currentUser;
 
+  // Buat akun masing"
+  final Map<String, String> _memberNames = {
+    'admin@test.com': 'Admin Ganteng',
+    'satria@hrl.com': 'Satria Herlambang',
+  };
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
