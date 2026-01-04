@@ -126,6 +126,16 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
+            ListTile(
+              leading: const Icon(Icons.home_outlined),
+              title: const Text('Home'),
+              selected: _selectedIndex == 0,
+              selectedColor: const Color(0xFF304D6D),
+              onTap: () {
+                _onItemTapped(0);
+                Navigator.pop(context);
+              },
+            ),
           ],
         ),
       ),
