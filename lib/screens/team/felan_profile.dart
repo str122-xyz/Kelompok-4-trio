@@ -14,6 +14,7 @@ class _FelanProfileState extends State<FelanProfile> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text('My Profile', style: TextStyle(color: Colors.white)),
         backgroundColor: Color(0xFF63ADF2),
         leading: IconButton(
