@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kelompok4_app_mobile/screens/auth/login_page.dart';
+import 'package:kelompok4_app_mobile/screens/dashboard/dashboard.dart';
+import 'package:kelompok4_app_mobile/screens/team/sadam_profile.dart';
 
 class SplashScreenSadam extends StatefulWidget {
   const SplashScreenSadam({super.key});
@@ -26,7 +28,7 @@ class _SplashScreenSadamState extends State<SplashScreenSadam> {
                   onTap: () {
                     Navigator.pushAndRemoveUntil(
                       context,
-                      MaterialPageRoute(builder: (_) => const LoginPage()),
+                      MaterialPageRoute(builder: (_) => const HomePage()),
                       (_) => false,
                     );
                   },
