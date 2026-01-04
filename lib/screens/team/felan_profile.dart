@@ -67,6 +67,12 @@ class _FelanProfileState extends State<FelanProfile> {
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Colors.white70, fontSize: 14),
                 ),
+
+                SizedBox(height: 12),
+
+                Divider(color: Colors.white24),
+
+                SizedBox(height: 8),
               ]
             )
           ),
