@@ -72,6 +72,15 @@ class _HomePageState extends State<HomePage> {
         ),
         iconTheme: const IconThemeData(color: Colors.white),
         automaticallyImplyLeading: false,
+        flexibleSpace: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Color(0xFF304D6D), Color(0xFF63ADF2)],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+          ),
+        ),
       ),
     );
   }
