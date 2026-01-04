@@ -18,8 +18,16 @@ class MyTeam {
     teams.add(
       MyTeam(
         nama: 'Felan Ardenta Yoga', 
-        pathPhoto: 'assets\images\felan_profile.jpeg', 
+        pathPhoto: 'assets/images/felan_profile.jpeg', 
         route: FelanProfile.routeName,
+      )
+    );
+
+    teams.add(
+      MyTeam(
+        nama: 'Satria Herlambang', 
+        pathPhoto: 'assets/images/satriaa.jpeg', 
+        route: ,
       )
     );
   }
