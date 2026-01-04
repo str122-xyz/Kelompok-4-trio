@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart'; //Important
 import 'package:kelompok4_app_mobile/screens/splash/splash_screen1.dart';
 import 'package:kelompok4_app_mobile/screens/team/enzho_profile.dart';
 import 'package:kelompok4_app_mobile/screens/team/felan_profile.dart';
+import 'package:kelompok4_app_mobile/screens/team/sadam_profile.dart';
 import 'package:kelompok4_app_mobile/screens/team/satria_profile.dart';
 import 'firebase_options.dart';
 
@@ -38,6 +39,7 @@ class MyApp extends StatelessWidget {
         FelanProfile.routeName: (_) => FelanProfile(),
         SatriahrlProfile.routeName: (_) => SatriahrlProfile(),
         EnzhoProfile.routeName: (_) => EnzhoProfile(),
+        SadamProfile.routeName: (_) => SadamProfile(),
         // tambah route lu di sini
       },
     );
