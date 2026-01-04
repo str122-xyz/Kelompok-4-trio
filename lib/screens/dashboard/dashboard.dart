@@ -180,6 +180,14 @@ class _HomePageState extends State<HomePage> {
             ),
           ],
         ),
+        child: BottomNavigationBar(
+          currentIndex: _selectedIndex,
+          onTap: _onItemTapped,
+          selectedItemColor: const Color(0xFF304D6D),
+          unselectedItemColor: Colors.grey,
+          showUnselectedLabels: false,
+          type: BottomNavigationBarType.fixed,
+        ),
       ),
     );
   }
