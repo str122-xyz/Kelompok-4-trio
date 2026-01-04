@@ -165,6 +165,22 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
+
+      // Isi Halaman
+      body: _pages[_selectedIndex],
+
+      //Bottom navigasi bar
+      bottomNavigationBar: Container(
+        decoration: BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.1),
+              blurRadius: 10,
+              offset: const Offset(0, -5),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
