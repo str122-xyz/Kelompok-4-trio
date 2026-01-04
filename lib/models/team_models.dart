@@ -1,6 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:kelompok4_app_mobile/screens/team/enzho_profile.dart';
 import 'package:kelompok4_app_mobile/screens/team/felan_profile.dart';
+import 'package:kelompok4_app_mobile/screens/team/sadam_profile.dart';
 import 'package:kelompok4_app_mobile/screens/team/satria_profile.dart';
 
 class MyTeam {
@@ -40,7 +41,15 @@ class MyTeam {
         route: EnzhoProfile.routeName,
       )
     );
-    
+
+    teams.add(
+      MyTeam(
+        nama: 'Sadam Irham Marami', 
+        pathPhoto: 'assets/images/sadam_profile.jpg', 
+        route: SadamProfile.routeName,
+      )
+    );
+
     return teams;
   }
 
