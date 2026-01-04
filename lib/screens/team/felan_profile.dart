@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class FelanProfile extends StatefulWidget {
   const FelanProfile({super.key});
@@ -27,6 +28,15 @@ class _FelanProfileState extends State<FelanProfile> {
                 colors: [Color(0xFF1E293B), Color(0xFF020617)],
               ),
             ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                SizedBox(
+                  height: 80,
+                  child: Lottie.asset('assets/animations/UIUX Designer.json')
+                ),
+              ]
+            )
           ),
         ),
       ),
