@@ -31,6 +31,13 @@ class _FelanProfileState extends State<FelanProfile> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
+                CircleAvatar(
+                  radius: 45,
+                  backgroundImage: AssetImage('assets/images/felan_profile.jpeg'),
+                ),
+
+                SizedBox(height: 20),
+
                 SizedBox(
                   height: 80,
                   child: ClipRRect(
@@ -42,15 +49,7 @@ class _FelanProfileState extends State<FelanProfile> {
                   ),
                 ),
 
-
-                SizedBox(height: 12),
-
-                CircleAvatar(
-                  radius: 45,
-                  backgroundImage: AssetImage('assets/images/felan_profile.jpeg'),
-                ),
-
-                const SizedBox(height: 12),
+                SizedBox(height: 20),
 
                 Text(
                   'Felan Ardenta Yoga',
