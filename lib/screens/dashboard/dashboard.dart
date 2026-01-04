@@ -14,6 +14,7 @@ class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0; // 0: Home, 1: Team, 2: Settings
   final AuthService _authService = AuthService();
   User? currentUser = FirebaseAuth.instance.currentUser;
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   // Buat akun masing"
   final Map<String, String> _memberNames = {
@@ -60,6 +61,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
       backgroundColor: Colors.grey[100],
       appBar: AppBar(
         title: const Text(
@@ -69,6 +71,13 @@ class _HomePageState extends State<HomePage> {
             fontWeight: FontWeight.bold,
             color: Colors.white,
           ),
+        ),
+        centerTitle: true,
+        leading: IconButton(
+          icon: const Icon(Icons.menu, color: Colors.white),
+          onPressed: () {
+            _scaffoldKey.currentState?.openDrawer();
+          },
         ),
         iconTheme: const IconThemeData(color: Colors.white),
         automaticallyImplyLeading: false,
@@ -126,36 +135,9 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
-            ListTile(
-              leading: const Icon(Icons.home_outlined),
-              title: const Text('Home'),
-              selected: _selectedIndex == 0,
-              selectedColor: const Color(0xFF304D6D),
-              onTap: () {
-                _onItemTapped(0);
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.people_outline),
-              title: const Text('Team'),
-              selected: _selectedIndex == 1,
-              selectedColor: const Color(0xFF304D6D),
-              onTap: () {
-                _onItemTapped(1);
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.settings_outlined),
-              title: const Text('Settings'),
-              selected: _selectedIndex == 2,
-              selectedColor: const Color(0xFF304D6D),
-              onTap: () {
-                _onItemTapped(2);
-                Navigator.pop(context);
-              },
-            ),
+            _buildDrawerItem(Icons.home_outlined, 'Home', 0),
+            _buildDrawerItem(Icons.people_outline, 'Team', 1),
+            _buildDrawerItem(Icons.settings_outlined, 'Settings', 2),
             const Divider(),
             ListTile(
               leading: const Icon(Icons.logout, color: Colors.red),
@@ -197,6 +179,20 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
+    );
+  }
+
+  // Helper buat item drawer biar rapi
+  Widget _buildDrawerItem(IconData icon, String title, int index) {
+    return ListTile(
+      leading: Icon(icon),
+      title: Text(title),
+      selected: _selectedIndex == index,
+      selectedColor: const Color(0xFF304D6D),
+      onTap: () {
+        _onItemTapped(index);
+        Navigator.pop(context);
+      },
     );
   }
 
