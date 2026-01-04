@@ -199,4 +199,33 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
+
+  // Widget Halaman Home
+  Widget _buildHomeContent() {
+    return SingleChildScrollView(
+      padding: const EdgeInsets.all(20.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            "Halo, ${_getDisplayName().split(' ')[0]}! 👋",
+            style: const TextStyle(
+              fontSize: 16,
+              color: Colors.grey,
+              fontFamily: 'Poppins',
+            ),
+          ),
+          const Text(
+            "Portal Akademik",
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+              color: Color(0xFF353535),
+              fontFamily: 'Poppins',
+            ),
+          ),
+        ],
+      ),
+    );
+  }
 }
