@@ -40,6 +40,7 @@ class MyTeam {
         route: EnzhoProfile.routeName,
       )
     );
+    
     return teams;
   }
 
