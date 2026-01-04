@@ -224,6 +224,33 @@ class _HomePageState extends State<HomePage> {
               fontFamily: 'Poppins',
             ),
           ),
+
+          const SizedBox(height: 20),
+
+          // Banner Carousel
+          SizedBox(
+            height: 160,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+                _buildBannerCard(
+                  "Jadwal UAS",
+                  "Cek jadwal ujianmu sekarang",
+                  const Color(0xFF304D6D),
+                ),
+                _buildBannerCard(
+                  "Beasiswa",
+                  "Pendaftaran Beasiswa 2026",
+                  const Color(0xFF63ADF2),
+                ),
+                _buildBannerCard(
+                  "Perpustakaan",
+                  "Buku baru tersedia",
+                  Colors.orange,
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
