@@ -13,12 +13,9 @@ class _ProfileTeamState extends State<ProfileTeam> {
   Widget build(BuildContext context) {
     final teams = MyTeam.getTeams();
     return Scaffold(
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(10.0),
-        child: Column(
-            children: [],
-        ),
-      ),
+      body: ListView.separated(
+        itemBuilder: itemBuilder, separatorBuilder: separatorBuilder, itemCount: itemCount
+      )
     );
   }
 }
