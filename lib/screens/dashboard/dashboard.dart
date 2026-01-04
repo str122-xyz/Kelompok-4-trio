@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
 
   // Buat akun masing"
   final Map<String, String> _memberNames = {
-    'admin@test.com': 'Admin Ganteng',
+    'atmin@email.com': 'Admin Ganteng',
     'satria@hrl.com': 'Satria Herlambang',
   };
 
