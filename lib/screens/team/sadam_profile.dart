@@ -28,10 +28,7 @@ class _SadamProfileState extends State<SadamProfile> {
           onPressed: () {
             Navigator.popUntil(context, (route) => route.isFirst);
           },
-          icon: const Icon(
-            Icons.arrow_back,
-            color: Colors.white,
-          ),
+          icon: const Icon(Icons.arrow_back, color: Colors.white),
         ),
       ),
       body: Center(
@@ -39,11 +36,6 @@ class _SadamProfileState extends State<SadamProfile> {
           padding: const EdgeInsets.all(20),
           child: Column(
             children: [
-              const Icon(
-                Icons.account_circle,
-                size: 50,
-                color: Colors.white54,
-              ),
               const SizedBox(height: 10),
               Card(
                 color: Colors.white,
@@ -62,7 +54,7 @@ class _SadamProfileState extends State<SadamProfile> {
                           ClipRRect(
                             borderRadius: BorderRadius.circular(50),
                             child: Image.asset(
-                              'assets/images/foto_sadam.jpg',
+                              'assets/images/sadam_profile.jpg',
                               width: 80,
                               height: 80,
                               fit: BoxFit.cover,
@@ -95,8 +87,7 @@ class _SadamProfileState extends State<SadamProfile> {
                           vertical: 2,
                         ),
                         decoration: BoxDecoration(
-                          color:
-                              const Color(0xff284B63).withOpacity(0.1),
+                          color: const Color(0xff284B63).withOpacity(0.1),
                           borderRadius: BorderRadius.circular(4),
                         ),
                         child: const Text(
@@ -115,7 +106,7 @@ class _SadamProfileState extends State<SadamProfile> {
                       const Text(
                         'NIM: 1123150087',
                         style: TextStyle(
-                          color: Colors.white,
+                          color: Colors.black,
                           fontFamily: 'Inter',
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -125,7 +116,7 @@ class _SadamProfileState extends State<SadamProfile> {
                       const Text(
                         'Keahlian: Catur dan Basic Programming',
                         style: TextStyle(
-                          color: Colors.white,
+                          color: Colors.black,
                           fontFamily: 'Inter',
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -135,7 +126,7 @@ class _SadamProfileState extends State<SadamProfile> {
                       const Text(
                         'Tentang Saya',
                         style: TextStyle(
-                          color: Colors.white,
+                          color: Colors.black,
                           fontFamily: 'Inter',
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -145,7 +136,7 @@ class _SadamProfileState extends State<SadamProfile> {
                       const Text(
                         'Hi, Nama saya Sadam Irham Marami. Saya adalah seorang mahasiswa di Global Institute yang mengambil jurusan Teknik Informatika yang berkonsentrasi di Software Engineer. Fokus saya saat ini adalah menyelesaikan kuliah dan bermain catur saat ada waktu senggang.',
                         style: TextStyle(
-                          color: Colors.white,
+                          color: Colors.black,
                           fontFamily: 'Inter',
                           fontSize: 18,
                           fontWeight: FontWeight.bold,

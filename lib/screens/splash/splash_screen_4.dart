@@ -49,7 +49,7 @@ class _SplashScreenSadamState extends State<SplashScreenSadam> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const FelanProfile(),
+                        builder: (context) => const SadamProfile(),
                       ),
                     );
                   },
