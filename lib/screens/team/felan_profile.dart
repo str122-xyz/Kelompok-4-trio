@@ -42,6 +42,17 @@ class _FelanProfileState extends State<FelanProfile> {
                   radius: 45,
                   backgroundImage: AssetImage('assets/images/felan_profile.jpeg'),
                 ),
+
+                const SizedBox(height: 12),
+
+                Text(
+                  'Felan Ardenta Yoga',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ]
             )
           ),
