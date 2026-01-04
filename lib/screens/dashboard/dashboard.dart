@@ -292,6 +292,16 @@ class _HomePageState extends State<HomePage> {
               fontFamily: 'Poppins',
             ),
           ),
+          const SizedBox(height: 10),
+          _buildNewsItem(
+            "Libur Semester Ganjil",
+            "Mulai tanggal 12 Januari 2026.",
+          ),
+          _buildNewsItem(
+            "Seminar Teknologi AI",
+            "Wajib bagi mahasiswa semester 5.",
+          ),
+          _buildNewsItem("Maintenance Sistem", "Server down pada hari Minggu."),
         ],
       ),
     );
