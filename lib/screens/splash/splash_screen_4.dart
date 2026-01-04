@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kelompok4_app_mobile/screens/auth/login_page.dart';
+import 'package:kelompok4_app_mobile/screens/dashboard/dashboard.dart';
 
 class SplashScreenSadam extends StatefulWidget {
   const SplashScreenSadam({super.key});
@@ -44,7 +45,7 @@ class _SplashScreenSadamState extends State<SplashScreenSadam> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const LoginPage(),
+                        builder: (context) => const HomePage(),
                       ),
                     );
                   },
