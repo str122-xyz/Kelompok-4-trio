@@ -19,7 +19,10 @@ class _ProfileTeamState extends State<ProfileTeam> {
           itemCount: teams.length,
           separatorBuilder: (_, __) => const Divider(),
           itemBuilder: (context, index) {
-            
+            final team = teams[index];
+
+            return ListTile(
+            )
           },
         ),
       )
