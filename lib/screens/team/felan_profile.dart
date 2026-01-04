@@ -73,6 +73,17 @@ class _FelanProfileState extends State<FelanProfile> {
                 Divider(color: Colors.white24),
 
                 SizedBox(height: 8),
+
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Keahlian:',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
               ]
             )
           ),
