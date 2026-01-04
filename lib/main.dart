@@ -6,6 +6,7 @@ import 'package:kelompok4_app_mobile/screens/team/enzho_profile.dart';
 import 'package:kelompok4_app_mobile/screens/team/felan_profile.dart';
 import 'package:kelompok4_app_mobile/screens/team/sadam_profile.dart';
 import 'package:kelompok4_app_mobile/screens/team/satria_profile.dart';
+import 'package:kelompok4_app_mobile/screens/team/zeinn_profile.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -40,6 +41,7 @@ class MyApp extends StatelessWidget {
         SatriahrlProfile.routeName: (_) => SatriahrlProfile(),
         EnzhoProfile.routeName: (_) => EnzhoProfile(),
         SadamProfile.routeName: (_) => SadamProfile(),
+        ZeinnProfile.routeName: (_) => ZeinnProfile(),
         // tambah route lu di sini
       },
     );
