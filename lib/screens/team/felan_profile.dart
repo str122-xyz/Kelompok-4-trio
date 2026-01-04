@@ -186,23 +186,23 @@ class _FelanProfileState extends State<FelanProfile> {
 
                 SizedBox(height: 8),
 
-Container(
-  width: double.infinity,
-  padding: EdgeInsets.all(12),
-  decoration: BoxDecoration(
-    color: Colors.white.withOpacity(0.2),
-    borderRadius: BorderRadius.circular(12),
-  ),
-  child: Text(
-    'Mahasiswa dengan pengalaman desain UI/UX pada proyek industri nyata. Terbiasa berpikir terstruktur, analitis, dan strategis, serta memiliki minat pada permainan catur sebagai sarana melatih fokus dan pengambilan keputusan.',
-    style: TextStyle(
-      color: Colors.white,
-      fontSize: 13,
-      height: 1.4,
-    ),
-    textAlign: TextAlign.justify,
-  ),
-),
+                Container(
+                  width: double.infinity,
+                  padding: EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Text(
+                    'Mahasiswa dengan pengalaman desain UI/UX pada proyek industri nyata. Terbiasa berpikir terstruktur, analitis, dan strategis, serta memiliki minat pada permainan catur sebagai sarana melatih fokus dan pengambilan keputusan.',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 13,
+                      height: 1.4,
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                ),
               ],
             ),
           ),
