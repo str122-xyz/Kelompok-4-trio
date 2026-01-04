@@ -13,7 +13,12 @@ class _FelanProfileState extends State<FelanProfile> {
     return Scaffold(
       backgroundColor:Color(0xFF63ADF2),
       body: Center(
-        
+        child: Card(
+          elevation: 12,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),
+        ),
       ),
     );
   }
