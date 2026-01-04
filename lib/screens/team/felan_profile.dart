@@ -123,6 +123,23 @@ class _FelanProfileState extends State<FelanProfile> {
 
                     SizedBox(width: 8),
 
+                    Container(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 10,
+                        vertical: 6,
+                      ),
+                      decoration: BoxDecoration(
+                        color: Color(0xFFD9D9D9),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Text(
+                        'Programming',
+                        style: TextStyle(color: Colors.black, fontSize: 12),
+                      ),
+                    ),
+
+                    SizedBox(width: 8),
+
                     
                   ]
                 )
