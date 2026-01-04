@@ -19,6 +19,12 @@ class _FelanProfileState extends State<FelanProfile> {
           ),
         ),
         backgroundColor: Color(0xFF63ADF2),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.popUntil(context, (route) => route.isFirst);
+          },
+          icon: Icon(Icons.arrow_back_ios, color: Colors.white),
+        ),
       ),
       backgroundColor: Color(0xFF63ADF2),
       body: Center(
