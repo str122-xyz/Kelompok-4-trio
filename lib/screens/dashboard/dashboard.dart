@@ -311,8 +311,11 @@ class _HomePageState extends State<HomePage> {
 
   Widget _buildTeamContent() {
     return Center(
-      child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Icon(Icons.engineering, size: 80, color: Colors.grey[400]),
+          const SizedBox(height: 20),
         ],
       ),
     );
