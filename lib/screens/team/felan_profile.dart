@@ -84,6 +84,32 @@ class _FelanProfileState extends State<FelanProfile> {
                     ),
                   ),
                 ),
+
+                const SizedBox(height: 8),
+
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 10,
+                        vertical: 6,
+                      ),
+                      decoration: BoxDecoration(
+                        color: Color(0xFFD9D9D9),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Text(
+                        'Design UI/UX',
+                        style: TextStyle(color: Colors.black, fontSize: 12),
+                      ),
+                    ),
+
+                    SizedBox(width: 8),
+
+                    
+                  ]
+                )
+                
               ]
             )
           ),
