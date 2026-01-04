@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class EnzhoProfile extends StatefulWidget {
+  static const routeName = '/profileEnzho';
   const EnzhoProfile({super.key});
 
   @override
