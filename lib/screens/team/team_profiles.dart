@@ -17,6 +17,7 @@ class _ProfileTeamState extends State<ProfileTeam> {
         padding: const EdgeInsets.only(top: 15, right: 8, left: 8),
         child: ListView.separated(
           itemCount: teams.length,
+          separatorBuilder: (_, __) => const Divider(),
         ),
       )
     );
