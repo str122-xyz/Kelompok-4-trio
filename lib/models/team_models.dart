@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:kelompok4_app_mobile/screens/team/enzho_profile.dart';
 import 'package:kelompok4_app_mobile/screens/team/felan_profile.dart';
 import 'package:kelompok4_app_mobile/screens/team/satria_profile.dart';
 
@@ -29,6 +30,14 @@ class MyTeam {
         nama: 'Satria Herlambang', 
         pathPhoto: 'assets/images/satriaa.jpeg', 
         route: SatriahrlProfile.routeName,
+      )
+    );
+
+    teams.add(
+      MyTeam(
+        nama: 'Mohamad Enzho Yuliawan', 
+        pathPhoto: 'assets/images/enzho_profile.jpg', 
+        route: EnzhoProfile.routeName,
       )
     );
     return teams;
