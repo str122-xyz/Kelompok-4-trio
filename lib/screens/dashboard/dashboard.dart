@@ -280,6 +280,18 @@ class _HomePageState extends State<HomePage> {
               _buildMenuIcon(Icons.more_horiz, "Lainnya", Colors.grey),
             ],
           ),
+
+          const SizedBox(height: 25),
+
+          // List Berita
+          const Text(
+            "Pengumuman Terbaru",
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              fontFamily: 'Poppins',
+            ),
+          ),
         ],
       ),
     );
