@@ -18,6 +18,9 @@ class _ProfileTeamState extends State<ProfileTeam> {
         child: ListView.separated(
           itemCount: teams.length,
           separatorBuilder: (_, __) => const Divider(),
+          itemBuilder: (context, index) {
+            
+          },
         ),
       )
     );
