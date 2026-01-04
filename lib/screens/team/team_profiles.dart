@@ -22,7 +22,11 @@ class _ProfileTeamState extends State<ProfileTeam> {
             final team = teams[index];
 
             return ListTile(
-            )
+              leading: CircleAvatar(
+                radius: 26,
+                backgroundImage: AssetImage(team.pathPhoto),
+              ),
+            );
           },
         ),
       )
