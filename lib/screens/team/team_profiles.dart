@@ -33,6 +33,10 @@ class _ProfileTeamState extends State<ProfileTeam> {
                   fontWeight: FontWeight.w600,
                 ),
               ),
+              trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+              onTap: () {
+                Navigator.pushNamed(context, team.route);
+              },
             );
           },
         ),
