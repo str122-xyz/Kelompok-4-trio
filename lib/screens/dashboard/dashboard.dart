@@ -88,6 +88,24 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
+
+      // Drawer
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            UserAccountsDrawerHeader(
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [Color(0xFF304D6D), Color(0xFF63ADF2)],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
