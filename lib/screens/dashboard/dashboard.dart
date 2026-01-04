@@ -8,6 +8,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  int _selectedIndex = 0; // 0: Home, 1: Team, 2: Settings
+  final AuthService _authService = AuthService();
+  User? currentUser = FirebaseAuth.instance.currentUser;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
