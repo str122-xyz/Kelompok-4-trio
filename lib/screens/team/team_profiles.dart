@@ -26,6 +26,13 @@ class _ProfileTeamState extends State<ProfileTeam> {
                 radius: 26,
                 backgroundImage: AssetImage(team.pathPhoto),
               ),
+              title: Text(
+                team.nama,
+                style: const TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
             );
           },
         ),
