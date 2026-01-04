@@ -18,6 +18,12 @@ class _HomePageState extends State<HomePage> {
     'satria@hrl.com': 'Satria Herlambang',
   };
 
+  // Fungsi buat ngambil nama berdasarkan email yang login
+  String _getDisplayName() {
+    String email = currentUser?.email ?? '';
+    return _memberNames[email] ?? 'Guest'; // Default jadi guest
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
