@@ -59,6 +59,14 @@ class _FelanProfileState extends State<FelanProfile> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
+
+                SizedBox(height: 4),
+
+                Text(
+                  'NIM: 1123150086\nKelas: T1-23-SH',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.white70, fontSize: 14),
+                ),
               ]
             )
           ),
