@@ -13,11 +13,7 @@ class _FelanProfileState extends State<FelanProfile> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My Profile',
-          style: TextStyle(
-            color: Colors.white,
-          ),
-        ),
+        title: Text('My Profile', style: TextStyle(color: Colors.white)),
         backgroundColor: Color(0xFF63ADF2),
         leading: IconButton(
           onPressed: () {
@@ -169,6 +165,19 @@ class _FelanProfileState extends State<FelanProfile> {
 
                     SizedBox(width: 8),
                   ],
+                ),
+
+                SizedBox(height: 16),
+
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Tentang Saya:',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
               ],
             ),
