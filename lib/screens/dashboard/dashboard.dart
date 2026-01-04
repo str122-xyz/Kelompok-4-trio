@@ -316,6 +316,14 @@ class _HomePageState extends State<HomePage> {
         children: [
           Icon(Icons.engineering, size: 80, color: Colors.grey[400]),
           const SizedBox(height: 20),
+          const Text(
+            "Team Profiles",
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              fontFamily: 'Poppins',
+            ),
+          ),
         ],
       ),
     );
