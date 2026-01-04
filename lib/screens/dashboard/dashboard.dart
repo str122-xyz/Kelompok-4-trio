@@ -263,6 +263,23 @@ class _HomePageState extends State<HomePage> {
               fontFamily: 'Poppins',
             ),
           ),
+          const SizedBox(height: 15),
+          GridView.count(
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            crossAxisCount: 4,
+            childAspectRatio: 0.8,
+            children: [
+              _buildMenuIcon(Icons.calendar_today, "Jadwal", Colors.blue),
+              _buildMenuIcon(Icons.assignment, "Nilai", Colors.green),
+              _buildMenuIcon(Icons.book, "KRS", Colors.orange),
+              _buildMenuIcon(Icons.monetization_on, "Keuangan", Colors.green),
+              _buildMenuIcon(Icons.school, "E-Learning", Colors.blue),
+              _buildMenuIcon(Icons.library_books, "Perpus", Colors.brown),
+              _buildMenuIcon(Icons.map, "Peta", Colors.teal),
+              _buildMenuIcon(Icons.more_horiz, "Lainnya", Colors.grey),
+            ],
+          ),
         ],
       ),
     );
