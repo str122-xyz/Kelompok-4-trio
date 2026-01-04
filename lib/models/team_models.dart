@@ -31,6 +31,7 @@ class MyTeam {
         route: SatriahrlProfile.routeName,
       )
     );
+    return teams;
   }
 
 }
