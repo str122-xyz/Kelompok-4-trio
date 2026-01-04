@@ -187,6 +187,14 @@ class _HomePageState extends State<HomePage> {
           unselectedItemColor: Colors.grey,
           showUnselectedLabels: false,
           type: BottomNavigationBarType.fixed,
+          items: const [
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+            BottomNavigationBarItem(icon: Icon(Icons.groups), label: 'Team'),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.settings),
+              label: 'Settings',
+            ),
+          ],
         ),
       ),
     );
