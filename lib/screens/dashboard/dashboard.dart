@@ -102,6 +102,29 @@ class _HomePageState extends State<HomePage> {
                   end: Alignment.bottomRight,
                 ),
               ),
+              accountName: Text(
+                _getDisplayName(),
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                  fontFamily: 'Poppins',
+                ),
+              ),
+              accountEmail: Text(
+                currentUser?.email ?? 'No Email',
+                style: const TextStyle(fontFamily: 'Poppins'),
+              ),
+              currentAccountPicture: CircleAvatar(
+                backgroundColor: Colors.white,
+                child: Text(
+                  _getDisplayName()[0],
+                  style: const TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF304D6D),
+                  ),
+                ),
+              ),
             ),
           ],
         ),
