@@ -13,8 +13,11 @@ class _ProfileTeamState extends State<ProfileTeam> {
   Widget build(BuildContext context) {
     final teams = MyTeam.getTeams();
     return Scaffold(
-      body: ListView.separated(
-        itemBuilder: itemBuilder, separatorBuilder: separatorBuilder, itemCount: itemCount
+      body: Padding(
+        padding: const EdgeInsets.only(top: 15, right: 8, left: 8),
+        child: ListView.separated(
+          itemBuilder: itemBuilder, separatorBuilder: separatorBuilder, itemCount: itemCount
+        ),
       )
     );
   }
