@@ -12,6 +12,14 @@ class _FelanProfileState extends State<FelanProfile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('My Profile',
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
+        backgroundColor: Color(0xFF63ADF2),
+      ),
       backgroundColor: Color(0xFF63ADF2),
       body: Center(
         child: Card(
