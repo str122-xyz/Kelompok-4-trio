@@ -19,7 +19,7 @@ class MyTeam {
       MyTeam(
         nama: 'Felan Ardenta Yoga', 
         pathPhoto: 'assets\images\felan_profile.jpeg', 
-        route: ,
+        route: FelanProfile.routeName,
       )
     );
   }

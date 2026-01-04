@@ -34,6 +34,7 @@ class MyApp extends StatelessWidget {
       home: const SplashScreen1(),
       routes: {
         FelanProfile.routeName: (_) => FelanProfile(),
+        // tambah route lu di sini
       },
     );
   }
