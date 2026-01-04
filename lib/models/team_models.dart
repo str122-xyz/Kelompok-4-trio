@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:kelompok4_app_mobile/screens/team/felan_profile.dart';
+import 'package:kelompok4_app_mobile/screens/team/satria_profile.dart';
 
 class MyTeam {
   String nama;
@@ -27,7 +28,7 @@ class MyTeam {
       MyTeam(
         nama: 'Satria Herlambang', 
         pathPhoto: 'assets/images/satriaa.jpeg', 
-        route: ,
+        route: SatriahrlProfile.routeName,
       )
     );
   }
