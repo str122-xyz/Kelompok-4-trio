@@ -35,6 +35,13 @@ class _FelanProfileState extends State<FelanProfile> {
                   height: 80,
                   child: Lottie.asset('assets/animations/UIUX Designer.json')
                 ),
+
+                const SizedBox(height: 12),
+
+                CircleAvatar(
+                  radius: 45,
+                  backgroundImage: AssetImage('assets/images/felan_profile.jpeg'),
+                ),
               ]
             )
           ),
