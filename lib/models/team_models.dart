@@ -3,6 +3,7 @@ import 'package:kelompok4_app_mobile/screens/team/enzho_profile.dart';
 import 'package:kelompok4_app_mobile/screens/team/felan_profile.dart';
 import 'package:kelompok4_app_mobile/screens/team/sadam_profile.dart';
 import 'package:kelompok4_app_mobile/screens/team/satria_profile.dart';
+import 'package:kelompok4_app_mobile/screens/team/zeinn_profile.dart';
 
 class MyTeam {
   String nama;
@@ -47,6 +48,14 @@ class MyTeam {
         nama: 'Sadam Irham Marami', 
         pathPhoto: 'assets/images/sadam_profile.jpg', 
         route: SadamProfile.routeName,
+      )
+    );
+
+    teams.add(
+      MyTeam(
+        nama: 'Ahmad Zein Adli Wibawa', 
+        pathPhoto: 'assets/images/zein_profil.jpeg', 
+        route: ZeinnProfile.routeName,
       )
     );
 
