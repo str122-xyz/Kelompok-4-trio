@@ -355,6 +355,19 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           const SizedBox(height: 20),
+
+          ListTile(
+            contentPadding: EdgeInsets.zero,
+            leading: const CircleAvatar(
+              backgroundColor: Colors.blue,
+              child: Icon(Icons.person, color: Colors.white),
+            ),
+            title: Text(
+              _getDisplayName(),
+              style: const TextStyle(fontWeight: FontWeight.bold),
+            ),
+            subtitle: Text(currentUser?.email ?? ''),
+          ),
         ],
       ),
     );
