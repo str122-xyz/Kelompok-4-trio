@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "280114464298",
+    "project_id": "ingpoglb",
+    "storage_bucket": "ingpoglb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280114464298:android:ab1dc0e92c8e373393e553",
+        "android_client_info": {
+          "package_name": "com.example.kelompok4_app_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4bvFBsCRUgy5nNOxS-hXLOhluJTeIDjA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
