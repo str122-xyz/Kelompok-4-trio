@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:kelompok4_app_mobile/screens/auth/login_page.dart';
+import 'package:kelompok4_app_mobile/screens/team/team_profiles.dart';
 import 'package:kelompok4_app_mobile/services/auth_service.dart';
 
 class HomePage extends StatefulWidget {
@@ -36,7 +37,7 @@ class _HomePageState extends State<HomePage> {
     super.initState();
     _pages = [
       _buildHomeContent(), // Halaman 0: Home Portal
-      _buildTeamContent(), // Halaman 1: Team
+      ProfileTeam(),
       _buildSettingsContent(), // Halaman 2: Settings
     ];
   }
@@ -305,34 +306,34 @@ class _HomePageState extends State<HomePage> {
 
   //  Widget Halaman Team
 
-  Widget _buildTeamContent() {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Icon(Icons.engineering, size: 80, color: Colors.grey[400]),
-          const SizedBox(height: 20),
-          const Text(
-            "Team Profiles",
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-              fontFamily: 'Poppins',
-            ),
-          ),
-          const SizedBox(height: 10),
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 40),
-            child: Text(
-              "hy kamu lanjutin",
-              textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.grey),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
+  // Widget _buildTeamContent() {
+  //   return Center(
+  //     child: Column(
+  //       mainAxisAlignment: MainAxisAlignment.center,
+  //       children: [
+  //         Icon(Icons.engineering, size: 80, color: Colors.grey[400]),
+  //         const SizedBox(height: 20),
+  //         const Text(
+  //           "Team Profiles",
+  //           style: TextStyle(
+  //             fontSize: 20,
+  //             fontWeight: FontWeight.bold,
+  //             fontFamily: 'Poppins',
+  //           ),
+  //         ),
+  //         const SizedBox(height: 10),
+  //         const Padding(
+  //           padding: EdgeInsets.symmetric(horizontal: 40),
+  //           child: Text(
+  //             "hy kamu lanjutin",
+  //             textAlign: TextAlign.center,
+  //             style: TextStyle(color: Colors.grey),
+  //           ),
+  //         ),
+  //       ],
+  //     ),
+  //   );
+  // }
 
   // Widget Halaman Pengaturan
 

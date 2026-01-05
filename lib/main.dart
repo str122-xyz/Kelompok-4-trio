@@ -2,6 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'package:firebase_core/firebase_core.dart'; //Important
 import 'package:kelompok4_app_mobile/screens/splash/splash_screen1.dart';
+import 'package:kelompok4_app_mobile/screens/team/enzho_profile.dart';
+import 'package:kelompok4_app_mobile/screens/team/felan_profile.dart';
+import 'package:kelompok4_app_mobile/screens/team/sadam_profile.dart';
+import 'package:kelompok4_app_mobile/screens/team/satria_profile.dart';
+import 'package:kelompok4_app_mobile/screens/team/zeinn_profile.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -31,6 +36,14 @@ class MyApp extends StatelessWidget {
       title: 'Project UAS Kelompok 4 Trio',
       theme: ThemeData(useMaterial3: true),
       home: const SplashScreen1(),
+      routes: {
+        FelanProfile.routeName: (_) => FelanProfile(),
+        SatriahrlProfile.routeName: (_) => SatriahrlProfile(),
+        EnzhoProfile.routeName: (_) => EnzhoProfile(),
+        SadamProfile.routeName: (_) => SadamProfile(),
+        ZeinnProfile.routeName: (_) => ZeinnProfile(),
+        // tambah route lu di sini
+      },
     );
   }
 }

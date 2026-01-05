@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SatriahrlProfile extends StatefulWidget {
+  static const routeName = '/profileSatria';
   const SatriahrlProfile({super.key});
 
   @override

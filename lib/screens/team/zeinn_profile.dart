@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ZeinnProfile extends StatefulWidget {
+  static const routeName = '/profileZein';
   const ZeinnProfile({super.key});
 
   @override
