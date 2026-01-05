@@ -30,6 +30,32 @@ class JadwalUasPage extends StatelessWidget {
               style: TextStyle(fontFamily: 'Poppins', color: Colors.grey),
             ),
             const SizedBox(height: 20),
+
+            // Dropdown Tipe Ujian
+            const Text(
+              "Tipe Ujian",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Poppins',
+              ),
+            ),
+            const SizedBox(height: 10),
+            DropdownButtonFormField<String>(
+              decoration: InputDecoration(
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                contentPadding: const EdgeInsets.symmetric(horizontal: 15),
+              ),
+              hint: const Text("Pilih Tipe Ujian"),
+              items: [
+                "Ujian Tengah Semester (UTS)",
+                "Ujian Akhir Semester (UAS)",
+              ].map((e) => DropdownMenuItem(value: e, child: Text(e))).toList(),
+              onChanged: (value) {},
+            ),
+
+            const SizedBox(height: 20),
           ],
         ),
       ),

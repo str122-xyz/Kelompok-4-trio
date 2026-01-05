@@ -287,7 +287,7 @@ class _HomePageState extends State<HomePage> {
                   "Pelaksanaan Ujian Susulan",
                   "Ingpo Lengkap Disini",
                   const Color(0xFF63ADF2),
-                  onTap: () => _navigateTo(const SusulanPage()),
+                  onTap: () {}, // Todo ganti navigate to page
                 ),
                 _buildBannerCard(
                   "Pengisian KRS Semester Genap",
@@ -329,7 +329,7 @@ class _HomePageState extends State<HomePage> {
                 "Jadwal",
                 const Color(0xFF304D6D),
                 onTap: () {
-                  _navigateTo(const JadwalKuliahPage());
+                  _showPopup("Ingpo", "Mas eh"); // Todo ganti navigate to page
                 },
               ),
               // Menu 2: Nilai
@@ -356,13 +356,14 @@ class _HomePageState extends State<HomePage> {
                   );
                 },
               ),
+
               // Menu 4: Keuangan
               _buildMenuIcon(
                 Icons.monetization_on,
                 "Keuangan",
                 Colors.green,
                 onTap: () {
-                  _navigateTo(const KeuanganPage());
+                  _showPopup("Ingpo", "Mas eh"); // Todo ganti navigate to page
                 },
               ),
             ],
