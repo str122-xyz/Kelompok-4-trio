@@ -286,7 +286,7 @@ class _HomePageState extends State<HomePage> {
                   "Pelaksanaan Ujian Susulan",
                   "Ingpo Lengkap Disini",
                   const Color(0xFF63ADF2),
-                  onTap: () => _navigateTo(const JadwalUasPage()),
+                  onTap: () => _navigateTo(const SusulanPage()),
                 ),
                 _buildBannerCard(
                   "Pengisian KRS Semester Genap",
@@ -508,23 +508,32 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Widget _buildMenuIcon(IconData icon, String label, Color color) {
-    return Column(
-      children: [
-        Container(
-          padding: const EdgeInsets.all(12),
-          decoration: BoxDecoration(
-            color: color.withOpacity(0.1),
-            borderRadius: BorderRadius.circular(15),
+  Widget _buildMenuIcon(
+    IconData icon,
+    String label,
+    Color color, {
+    required VoidCallback onTap,
+  }) {
+    return InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(15),
+      child: Column(
+        children: [
+          Container(
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: color.withOpacity(0.1),
+              borderRadius: BorderRadius.circular(15),
+            ),
+            child: Icon(icon, color: color, size: 28),
           ),
-          child: Icon(icon, color: color, size: 28),
-        ),
-        const SizedBox(height: 8),
-        Text(
-          label,
-          style: const TextStyle(fontSize: 12, fontFamily: 'Poppins'),
-        ),
-      ],
+          const SizedBox(height: 8),
+          Text(
+            label,
+            style: const TextStyle(fontSize: 12, fontFamily: 'Poppins'),
+          ),
+        ],
+      ),
     );
   }
 
