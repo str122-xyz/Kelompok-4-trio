@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:kelompok4_app_mobile/screens/auth/login_page.dart';
+import 'package:kelompok4_app_mobile/screens/dashboard/sub_pages.dart';
 import 'package:kelompok4_app_mobile/screens/team/team_profiles.dart';
 import 'package:kelompok4_app_mobile/services/auth_service.dart';
 
