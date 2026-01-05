@@ -272,9 +272,9 @@ class _HomePageState extends State<HomePage> {
             crossAxisCount: 4,
             childAspectRatio: 0.8,
             children: [
-              _buildMenuIcon(Icons.calendar_today, "Jadwal", Colors.blue),
-              _buildMenuIcon(Icons.assignment, "Nilai", Color(0xFF304D6D)),
-              _buildMenuIcon(Icons.book, "Presensi", Color(0xFF63ADF2)),
+              _buildMenuIcon(Icons.calendar_today, "Jadwal", Color(0xFF304D6D)),
+              _buildMenuIcon(Icons.assignment, "Nilai", Color(0xFF63ADF2)),
+              _buildMenuIcon(Icons.book, "Presensi", Colors.blue),
               _buildMenuIcon(Icons.monetization_on, "Keuangan", Colors.green),
             ],
           ),
