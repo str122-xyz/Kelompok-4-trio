@@ -322,10 +322,48 @@ class _HomePageState extends State<HomePage> {
             crossAxisCount: 4,
             childAspectRatio: 0.8,
             children: [
-              _buildMenuIcon(Icons.calendar_today, "Jadwal", Color(0xFF304D6D)),
-              _buildMenuIcon(Icons.assignment, "Nilai", Color(0xFF63ADF2)),
-              _buildMenuIcon(Icons.book, "Presensi", Colors.blue),
-              _buildMenuIcon(Icons.monetization_on, "Keuangan", Colors.green),
+              // Menu 1: Jadwal
+              _buildMenuIcon(
+                Icons.calendar_today,
+                "Jadwal",
+                const Color(0xFF304D6D),
+                onTap: () {
+                  _navigateTo(const JadwalKuliahPage());
+                },
+              ),
+              // Menu 2: Nilai
+              _buildMenuIcon(
+                Icons.assignment,
+                "Nilai",
+                const Color(0xFF63ADF2),
+                onTap: () {
+                  _showPopup(
+                    "Informasi",
+                    "Fitur Nilai sedang dalam perbaikan server.",
+                  );
+                },
+              ),
+              // Menu 3: Presensi
+              _buildMenuIcon(
+                Icons.book,
+                "Presensi",
+                Colors.blue,
+                onTap: () {
+                  _showPopup(
+                    "Informasi",
+                    "Fitur Presensi belum tersedia saat ini.",
+                  );
+                },
+              ),
+              // Menu 4: Keuangan
+              _buildMenuIcon(
+                Icons.monetization_on,
+                "Keuangan",
+                Colors.green,
+                onTap: () {
+                  _navigateTo(const KeuanganPage());
+                },
+              ),
             ],
           ),
 
