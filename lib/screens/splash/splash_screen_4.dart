@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:kelompok4_app_mobile/screens/auth/login_page.dart';
-import 'package:kelompok4_app_mobile/screens/dashboard/dashboard.dart';
 
 class SplashScreenSadam extends StatefulWidget {
   const SplashScreenSadam({super.key});
