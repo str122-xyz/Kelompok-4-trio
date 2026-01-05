@@ -59,6 +59,11 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
+  // Fungsi helper buat Navigasi Pindah Halaman
+  void _navigateTo(Widget page) {
+    Navigator.push(context, MaterialPageRoute(builder: (context) => page));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
