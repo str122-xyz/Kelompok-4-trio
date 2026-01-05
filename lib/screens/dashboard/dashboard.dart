@@ -490,12 +490,17 @@ class _HomePageState extends State<HomePage> {
                 color: Colors.white,
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
+                fontFamily: 'Poppins',
               ),
             ),
             const SizedBox(height: 5),
             Text(
               subtitle,
-              style: const TextStyle(color: Colors.white70, fontSize: 14),
+              style: const TextStyle(
+                color: Colors.white70,
+                fontSize: 14,
+                fontFamily: 'Inter',
+              ),
             ),
           ],
         ),
