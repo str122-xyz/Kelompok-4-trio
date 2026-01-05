@@ -229,7 +229,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  // Helper buat item drawer biar rapi
+  // function buat item drawer biar rapi
   Widget _buildDrawerItem(IconData icon, String title, int index) {
     return ListTile(
       leading: Icon(icon),
@@ -278,23 +278,27 @@ class _HomePageState extends State<HomePage> {
               children: [
                 _buildBannerCard(
                   "Jadwal UAS",
-                  "Cek jadwal ujianmu sekarang",
+                  "Cek dan Cetak Kartu Ujian",
                   const Color(0xFF304D6D),
+                  onTap: () => _navigateTo(const JadwalUasPage()),
                 ),
                 _buildBannerCard(
                   "Pelaksanaan Ujian Susulan",
-                  "14, 15 & 17 Januari 2026",
+                  "Ingpo Lengkap Disini",
                   const Color(0xFF63ADF2),
+                  onTap: () => _navigateTo(const JadwalUasPage()),
                 ),
                 _buildBannerCard(
                   "Pengisian KRS Semester Genap",
-                  "19 Januari s/d 24 Januari 2026",
+                  "19 Jan - 24 Jan 2026",
                   Colors.orange,
+                  onTap: () {},
                 ),
                 _buildBannerCard(
                   "Masuk Perkuliahan Semester Genap",
                   "09 Februari 2026",
                   const Color(0xFFE53935),
+                  onTap: () {},
                 ),
               ],
             ),
