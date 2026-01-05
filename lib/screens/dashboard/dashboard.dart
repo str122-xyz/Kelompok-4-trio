@@ -59,9 +59,50 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
-  // Fungsi helper buat Navigasi Pindah Halaman
+  // Fungsi buat Navigasi Pindah Halaman
   void _navigateTo(Widget page) {
     Navigator.push(context, MaterialPageRoute(builder: (context) => page));
+  }
+
+  // Fungsi Popup
+  void _showPopup(String title, String message) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(15),
+          ),
+          title: Row(
+            children: [
+              const Icon(Icons.info_outline, color: Color(0xFF304D6D)),
+              const SizedBox(width: 10),
+              Text(
+                title,
+                style: const TextStyle(
+                  fontFamily: 'Poppins',
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+          content: Text(message, style: const TextStyle(fontFamily: 'Poppins')),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: const Text(
+                "Oke",
+                style: TextStyle(
+                  color: Color(0xFF304D6D),
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ],
+        );
+      },
+    );
   }
 
   @override
