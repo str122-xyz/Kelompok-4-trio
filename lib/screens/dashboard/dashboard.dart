@@ -390,37 +390,6 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  //  Widget Halaman Team
-
-  // Widget _buildTeamContent() {
-  //   return Center(
-  //     child: Column(
-  //       mainAxisAlignment: MainAxisAlignment.center,
-  //       children: [
-  //         Icon(Icons.engineering, size: 80, color: Colors.grey[400]),
-  //         const SizedBox(height: 20),
-  //         const Text(
-  //           "Team Profiles",
-  //           style: TextStyle(
-  //             fontSize: 20,
-  //             fontWeight: FontWeight.bold,
-  //             fontFamily: 'Poppins',
-  //           ),
-  //         ),
-  //         const SizedBox(height: 10),
-  //         const Padding(
-  //           padding: EdgeInsets.symmetric(horizontal: 40),
-  //           child: Text(
-  //             "hy kamu lanjutin",
-  //             textAlign: TextAlign.center,
-  //             style: TextStyle(color: Colors.grey),
-  //           ),
-  //         ),
-  //       ],
-  //     ),
-  //   );
-  // }
-
   // Widget Halaman Pengaturan
 
   Widget _buildSettingsContent() {
@@ -447,7 +416,10 @@ class _HomePageState extends State<HomePage> {
             ),
             title: Text(
               _getDisplayName(),
-              style: const TextStyle(fontWeight: FontWeight.bold),
+              style: const TextStyle(
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Inter',
+              ),
             ),
             subtitle: Text(currentUser?.email ?? ''),
           ),
@@ -468,10 +440,13 @@ class _HomePageState extends State<HomePage> {
                   borderRadius: BorderRadius.circular(12),
                 ),
               ),
-              icon: const Icon(Icons.logout),
+              icon: const Icon(Icons.logout_outlined),
               label: const Text(
                 "Keluar Aplikasi",
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Inter',
+                ),
               ),
             ),
           ),
