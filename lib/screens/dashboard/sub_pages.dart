@@ -216,4 +216,17 @@ class SusulanPages extends StatelessWidget {
       ),
     );
   }
+
+  Widget _buildBulletPoint(String text) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8.0),
+      child: Row(
+        children: [
+          const Icon(Icons.circle, size: 8, color: Colors.black),
+          const SizedBox(width: 10),
+          Text(text, style: const TextStyle(fontFamily: 'Inter')),
+        ],
+      ),
+    );
+  }
 }
