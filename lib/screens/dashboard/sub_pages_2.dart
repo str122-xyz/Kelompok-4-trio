@@ -188,3 +188,27 @@ class JadwalPage extends StatelessWidget {
     );
   }
 }
+
+class KeuanganPage extends StatelessWidget {
+  const KeuanganPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.grey[100],
+      appBar: AppBar(
+        title: const Text(
+          "Keuangan",
+          style: TextStyle(
+            fontFamily: 'Poppins',
+            fontWeight: FontWeight.bold,
+            fontSize: 18,
+          ),
+        ),
+        backgroundColor: Colors.white,
+        elevation: 0,
+        iconTheme: const IconThemeData(color: Colors.black),
+      ),
+    );
+  }
+}
