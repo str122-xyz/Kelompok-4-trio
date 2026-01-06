@@ -99,7 +99,45 @@ class JadwalPage extends StatelessWidget {
       elevation: 2,
       child: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: Column(crossAxisAlignment: CrossAxisAlignment.start),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Expanded(
+                  child: Text(
+                    matkul,
+                    style: const TextStyle(
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                      color: Color(0xFF304D6D),
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 10,
+                    vertical: 4,
+                  ),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFF63ADF2).withOpacity(0.1),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Text(
+                    "$sks SKS",
+                    style: const TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF304D6D),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
