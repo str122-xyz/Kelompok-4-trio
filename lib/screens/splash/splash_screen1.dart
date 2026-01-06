@@ -1,5 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:kelompok4_app_mobile/screens/auth/login_page.dart';
 import 'package:kelompok4_app_mobile/screens/splash/splash_screen_2.dart';
 
 class SplashScreen1 extends StatefulWidget {
