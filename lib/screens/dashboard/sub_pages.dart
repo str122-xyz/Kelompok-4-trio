@@ -174,6 +174,21 @@ class SusulanPages extends StatelessWidget {
                 ],
               ),
             ),
+            const SizedBox(height: 20),
+            const Text(
+              "Jadwal Pelaksanaan",
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Poppins',
+              ),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              "Ujian Susulan akan dilaksanakan pada tanggal 14, 15 & 17 Januari 2026. Mahasiswa diwajibkan melapor ke BAAK paling lambat H-3 pelaksanaan.",
+              style: TextStyle(fontFamily: 'Inter', height: 1.5),
+              textAlign: TextAlign.justify,
+            ),
           ],
         ),
       ),
