@@ -20,6 +20,67 @@ class JadwalPage extends StatelessWidget {
         elevation: 0,
         iconTheme: const IconThemeData(color: Colors.black),
       ),
+      body: ListView(
+        padding: const EdgeInsets.all(20),
+        children: [
+          _buildJadwalCard(
+            "Selasa",
+            "08:00 - 09:30",
+            "ERP",
+            "2",
+            "R.404",
+            "Dr. Moh. Ramaddan Julianti, MT",
+          ),
+          _buildJadwalCard(
+            "Selasa",
+            "10:00 - 11:45",
+            "Technopreneurship",
+            "2",
+            "R.404",
+            "Ade Supriyatna, M.M",
+          ),
+          _buildJadwalCard(
+            "Rabu",
+            "08:00 - 10:30",
+            "IT Governance",
+            "3",
+            "R.505",
+            "Muchamad Iqbal, S.E, M.Kom",
+          ),
+          _buildJadwalCard(
+            "Rabu",
+            "10:40 - 13:00",
+            "System Pakar",
+            "3",
+            "R.505",
+            "Dr. Moh. Ramaddan Julianti, MT",
+          ),
+          _buildJadwalCard(
+            "Rabu",
+            "13:30 - 15:00",
+            "AI",
+            "3",
+            "R.505",
+            "Dr. Moh. Ramaddan Julianti, MT",
+          ),
+          _buildJadwalCard(
+            "Kamis",
+            "10:40 - 13:10",
+            "RPL",
+            "3",
+            "R.301",
+            "Rizki Adha, M.Kom",
+          ),
+          _buildJadwalCard(
+            "Jumat",
+            "10:40 - 13:10",
+            "Mobile Apps",
+            "3",
+            "R.Lab",
+            "I Ketut Gunawan, S.Kom, MTI",
+          ),
+        ],
+      ),
     );
   }
 }
