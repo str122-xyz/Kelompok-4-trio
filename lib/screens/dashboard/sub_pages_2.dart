@@ -136,6 +136,33 @@ class JadwalPage extends StatelessWidget {
                 ),
               ],
             ),
+
+            const Divider(height: 20),
+
+            Row(
+              children: [
+                const Icon(Icons.calendar_today, size: 14, color: Colors.grey),
+                const SizedBox(width: 5),
+                Text(
+                  hari,
+                  style: const TextStyle(fontFamily: 'Poppins', fontSize: 13),
+                ),
+                const SizedBox(width: 15),
+                const Icon(Icons.access_time, size: 14, color: Colors.grey),
+                const SizedBox(width: 5),
+                Text(
+                  jam,
+                  style: const TextStyle(fontFamily: 'Poppins', fontSize: 13),
+                ),
+                const SizedBox(width: 15),
+                const Icon(Icons.location_on, size: 14, color: Colors.grey),
+                const SizedBox(width: 5),
+                Text(
+                  ruang,
+                  style: const TextStyle(fontFamily: 'Poppins', fontSize: 13),
+                ),
+              ],
+            ),
           ],
         ),
       ),
