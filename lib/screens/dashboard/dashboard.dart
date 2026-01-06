@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:kelompok4_app_mobile/screens/auth/login_page.dart';
 import 'package:kelompok4_app_mobile/screens/dashboard/sub_pages.dart';
+import 'package:kelompok4_app_mobile/screens/dashboard/sub_pages_2.dart';
 import 'package:kelompok4_app_mobile/screens/team/team_profiles.dart';
 import 'package:kelompok4_app_mobile/services/auth_service.dart';
 
@@ -287,7 +288,7 @@ class _HomePageState extends State<HomePage> {
                   "Pelaksanaan Ujian Susulan",
                   "Ingpo Lengkap Disini",
                   const Color(0xFF63ADF2),
-                  onTap: () {}, // Todo ganti navigate to page
+                  onTap: () => _navigateTo(const SusulanPages()),
                 ),
                 _buildBannerCard(
                   "Pengisian KRS Semester Genap",
@@ -329,7 +330,7 @@ class _HomePageState extends State<HomePage> {
                 "Jadwal",
                 const Color(0xFF304D6D),
                 onTap: () {
-                  _showPopup("Ingpo", "Mas eh"); // Todo ganti navigate to page
+                  _navigateTo(const JadwalPage());
                 },
               ),
               // Menu 2: Nilai
@@ -363,7 +364,7 @@ class _HomePageState extends State<HomePage> {
                 "Keuangan",
                 Colors.green,
                 onTap: () {
-                  _showPopup("Ingpo", "Mas eh"); // Todo ganti navigate to page
+                  _navigateTo(const KeuanganPage());
                 },
               ),
             ],
