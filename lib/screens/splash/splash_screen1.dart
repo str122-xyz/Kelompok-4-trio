@@ -1,5 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:kelompok4_app_mobile/screens/auth/login_page.dart';
 import 'package:kelompok4_app_mobile/screens/splash/splash_screen_2.dart';
 
 class SplashScreen1 extends StatefulWidget {
@@ -10,32 +12,41 @@ class SplashScreen1 extends StatefulWidget {
 }
 
 class _SplashScreen1State extends State<SplashScreen1> {
-  Timer? _timer;
-
   @override
   void initState() {
     super.initState();
-    _timer = Timer(const Duration(seconds: 2), () {
-      if (mounted) {
-        Navigator.of(context).pushReplacement(
-          PageRouteBuilder(
-            pageBuilder: (context, animation, secondaryAnimation) =>
-                const SplashZeinn(),
-            transitionsBuilder:
-                (context, animation, secondaryAnimation, child) {
-                  return FadeTransition(opacity: animation, child: child);
-                },
-            transitionDuration: const Duration(milliseconds: 800),
-          ),
-        );
-      }
-    });
+    _checkFirstSeen();
   }
 
-  @override
-  void dispose() {
-    _timer?.cancel();
-    super.dispose();
+  Future<void> _checkFirstSeen() async {
+    await Future.delayed(const Duration(seconds: 2));
+
+    if (!mounted) return;
+
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    // Cek key 'seen_onboarding', defaultnya false (artinya belum pernah liat)
+    bool seenOnboarding = (prefs.getBool('seen_onboarding') ?? false);
+
+    if (seenOnboarding) {
+      // Udah pernah dibuka
+      // Langsung loncat ke Login
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (context) => const LoginPage()),
+      );
+    } else {
+      await prefs.setBool('seen_onboarding', true);
+
+      Navigator.of(context).pushReplacement(
+        PageRouteBuilder(
+          pageBuilder: (context, animation, secondaryAnimation) =>
+              const SplashZeinn(),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            return FadeTransition(opacity: animation, child: child);
+          },
+          transitionDuration: const Duration(milliseconds: 800),
+        ),
+      );
+    }
   }
 
   @override

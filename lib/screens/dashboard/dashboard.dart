@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:kelompok4_app_mobile/screens/auth/login_page.dart';
+import 'package:kelompok4_app_mobile/screens/dashboard/sub_pages.dart';
+import 'package:kelompok4_app_mobile/screens/dashboard/sub_pages_2.dart';
 import 'package:kelompok4_app_mobile/screens/team/team_profiles.dart';
 import 'package:kelompok4_app_mobile/services/auth_service.dart';
 
@@ -57,6 +59,52 @@ class _HomePageState extends State<HomePage> {
         MaterialPageRoute(builder: (context) => const LoginPage()),
       );
     }
+  }
+
+  // Fungsi buat Navigasi Pindah Halaman
+  void _navigateTo(Widget page) {
+    Navigator.push(context, MaterialPageRoute(builder: (context) => page));
+  }
+
+  // Fungsi Popup
+  void _showPopup(String title, String message) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(15),
+          ),
+          title: Row(
+            children: [
+              const Icon(Icons.info_outline, color: Color(0xFF304D6D)),
+              const SizedBox(width: 10),
+              Text(
+                title,
+                style: const TextStyle(
+                  fontFamily: 'Poppins',
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+          content: Text(message, style: const TextStyle(fontFamily: 'Poppins')),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: const Text(
+                "Oke",
+                style: TextStyle(
+                  color: Color(0xFF304D6D),
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ],
+        );
+      },
+    );
   }
 
   @override
@@ -183,7 +231,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  // Helper buat item drawer biar rapi
+  // function buat item drawer biar rapi
   Widget _buildDrawerItem(IconData icon, String title, int index) {
     return ListTile(
       leading: Icon(icon),
@@ -232,18 +280,27 @@ class _HomePageState extends State<HomePage> {
               children: [
                 _buildBannerCard(
                   "Jadwal UAS",
-                  "Cek jadwal ujianmu sekarang",
+                  "Cek dan Cetak Kartu Ujian",
                   const Color(0xFF304D6D),
+                  onTap: () => _navigateTo(const JadwalUasPage()),
                 ),
                 _buildBannerCard(
-                  "Beasiswa",
-                  "Pendaftaran Beasiswa 2026",
+                  "Pelaksanaan Ujian Susulan",
+                  "Ingpo Lengkap Disini",
                   const Color(0xFF63ADF2),
+                  onTap: () => _navigateTo(const SusulanPages()),
                 ),
                 _buildBannerCard(
-                  "Perpustakaan",
-                  "Buku baru tersedia",
+                  "Pengisian KRS Semester Genap",
+                  "19 Jan - 24 Jan 2026",
                   Colors.orange,
+                  onTap: () {},
+                ),
+                _buildBannerCard(
+                  "Masuk Perkuliahan Semester Genap",
+                  "09 Februari 2026",
+                  const Color(0xFFE53935),
+                  onTap: () {},
                 ),
               ],
             ),
@@ -267,14 +324,49 @@ class _HomePageState extends State<HomePage> {
             crossAxisCount: 4,
             childAspectRatio: 0.8,
             children: [
-              _buildMenuIcon(Icons.calendar_today, "Jadwal", Colors.blue),
-              _buildMenuIcon(Icons.assignment, "Nilai", Colors.green),
-              _buildMenuIcon(Icons.book, "KRS", Colors.orange),
-              _buildMenuIcon(Icons.monetization_on, "Keuangan", Colors.green),
-              _buildMenuIcon(Icons.school, "E-Learning", Colors.blue),
-              _buildMenuIcon(Icons.library_books, "Perpus", Colors.brown),
-              _buildMenuIcon(Icons.map, "Peta", Colors.teal),
-              _buildMenuIcon(Icons.more_horiz, "Lainnya", Colors.grey),
+              // Menu 1: Jadwal
+              _buildMenuIcon(
+                Icons.calendar_today,
+                "Jadwal",
+                const Color(0xFF304D6D),
+                onTap: () {
+                  _navigateTo(const JadwalPage());
+                },
+              ),
+              // Menu 2: Nilai
+              _buildMenuIcon(
+                Icons.assignment,
+                "Nilai",
+                const Color(0xFF63ADF2),
+                onTap: () {
+                  _showPopup(
+                    "Informasi",
+                    "Fitur Nilai sedang dalam perbaikan server.",
+                  );
+                },
+              ),
+              // Menu 3: Presensi
+              _buildMenuIcon(
+                Icons.book,
+                "Presensi",
+                Colors.blue,
+                onTap: () {
+                  _showPopup(
+                    "Informasi",
+                    "Fitur Presensi belum tersedia saat ini.",
+                  );
+                },
+              ),
+
+              // Menu 4: Keuangan
+              _buildMenuIcon(
+                Icons.monetization_on,
+                "Keuangan",
+                Colors.green,
+                onTap: () {
+                  _navigateTo(const KeuanganPage());
+                },
+              ),
             ],
           ),
 
@@ -294,46 +386,12 @@ class _HomePageState extends State<HomePage> {
             "Libur Semester Ganjil",
             "Mulai tanggal 12 Januari 2026.",
           ),
-          _buildNewsItem(
-            "Seminar Teknologi AI",
-            "Wajib bagi mahasiswa semester 5.",
-          ),
+          _buildNewsItem("Pengumuman Nilai Akhir", "19 Januari 2026"),
           _buildNewsItem("Maintenance Sistem", "Server down pada hari Minggu."),
         ],
       ),
     );
   }
-
-  //  Widget Halaman Team
-
-  // Widget _buildTeamContent() {
-  //   return Center(
-  //     child: Column(
-  //       mainAxisAlignment: MainAxisAlignment.center,
-  //       children: [
-  //         Icon(Icons.engineering, size: 80, color: Colors.grey[400]),
-  //         const SizedBox(height: 20),
-  //         const Text(
-  //           "Team Profiles",
-  //           style: TextStyle(
-  //             fontSize: 20,
-  //             fontWeight: FontWeight.bold,
-  //             fontFamily: 'Poppins',
-  //           ),
-  //         ),
-  //         const SizedBox(height: 10),
-  //         const Padding(
-  //           padding: EdgeInsets.symmetric(horizontal: 40),
-  //           child: Text(
-  //             "hy kamu lanjutin",
-  //             textAlign: TextAlign.center,
-  //             style: TextStyle(color: Colors.grey),
-  //           ),
-  //         ),
-  //       ],
-  //     ),
-  //   );
-  // }
 
   // Widget Halaman Pengaturan
 
@@ -361,7 +419,10 @@ class _HomePageState extends State<HomePage> {
             ),
             title: Text(
               _getDisplayName(),
-              style: const TextStyle(fontWeight: FontWeight.bold),
+              style: const TextStyle(
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Inter',
+              ),
             ),
             subtitle: Text(currentUser?.email ?? ''),
           ),
@@ -382,10 +443,13 @@ class _HomePageState extends State<HomePage> {
                   borderRadius: BorderRadius.circular(12),
                 ),
               ),
-              icon: const Icon(Icons.logout),
+              icon: const Icon(Icons.logout_outlined),
               label: const Text(
                 "Keluar Aplikasi",
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Inter',
+                ),
               ),
             ),
           ),
@@ -396,61 +460,83 @@ class _HomePageState extends State<HomePage> {
 
   // Widget helper
 
-  Widget _buildBannerCard(String title, String subtitle, Color color) {
-    return Container(
-      width: 280,
-      margin: const EdgeInsets.only(right: 15),
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        color: color,
-        borderRadius: BorderRadius.circular(20),
-        boxShadow: [
-          BoxShadow(
-            color: color.withOpacity(0.3),
-            blurRadius: 10,
-            offset: const Offset(0, 5),
-          ),
-        ],
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            title,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
+  Widget _buildBannerCard(
+    String title,
+    String subtitle,
+    Color color, {
+    required VoidCallback onTap,
+  }) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        width: 280,
+        margin: const EdgeInsets.only(right: 15),
+        padding: const EdgeInsets.all(20),
+        decoration: BoxDecoration(
+          color: color,
+          borderRadius: BorderRadius.circular(20),
+          boxShadow: [
+            BoxShadow(
+              color: color.withOpacity(0.3),
+              blurRadius: 10,
+              offset: const Offset(0, 5),
             ),
-          ),
-          const SizedBox(height: 5),
-          Text(
-            subtitle,
-            style: const TextStyle(color: Colors.white70, fontSize: 14),
-          ),
-        ],
+          ],
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              title,
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Poppins',
+              ),
+            ),
+            const SizedBox(height: 5),
+            Text(
+              subtitle,
+              style: const TextStyle(
+                color: Colors.white70,
+                fontSize: 14,
+                fontFamily: 'Inter',
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
 
-  Widget _buildMenuIcon(IconData icon, String label, Color color) {
-    return Column(
-      children: [
-        Container(
-          padding: const EdgeInsets.all(12),
-          decoration: BoxDecoration(
-            color: color.withOpacity(0.1),
-            borderRadius: BorderRadius.circular(15),
+  Widget _buildMenuIcon(
+    IconData icon,
+    String label,
+    Color color, {
+    required VoidCallback onTap,
+  }) {
+    return InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(15),
+      child: Column(
+        children: [
+          Container(
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: color.withOpacity(0.1),
+              borderRadius: BorderRadius.circular(15),
+            ),
+            child: Icon(icon, color: color, size: 28),
           ),
-          child: Icon(icon, color: color, size: 28),
-        ),
-        const SizedBox(height: 8),
-        Text(
-          label,
-          style: const TextStyle(fontSize: 12, fontFamily: 'Poppins'),
-        ),
-      ],
+          const SizedBox(height: 8),
+          Text(
+            label,
+            style: const TextStyle(fontSize: 12, fontFamily: 'Poppins'),
+          ),
+        ],
+      ),
     );
   }
 
@@ -477,11 +563,6 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         subtitle: Text(date),
-        trailing: const Icon(
-          Icons.arrow_forward_ios,
-          size: 16,
-          color: Colors.grey,
-        ),
       ),
     );
   }
