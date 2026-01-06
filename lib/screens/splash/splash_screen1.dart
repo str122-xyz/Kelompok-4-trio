@@ -35,6 +35,17 @@ class _SplashScreen1State extends State<SplashScreen1> {
       );
     } else {
       await prefs.setBool('seen_onboarding', true);
+
+      Navigator.of(context).pushReplacement(
+        PageRouteBuilder(
+          pageBuilder: (context, animation, secondaryAnimation) =>
+              const SplashZeinn(),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            return FadeTransition(opacity: animation, child: child);
+          },
+          transitionDuration: const Duration(milliseconds: 800),
+        ),
+      );
     }
   }
 
