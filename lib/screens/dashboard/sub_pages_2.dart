@@ -83,4 +83,24 @@ class JadwalPage extends StatelessWidget {
       ),
     );
   }
+
+  // Jadwal Card
+  Widget _buildJadwalCard(
+    String hari,
+    String jam,
+    String matkul,
+    String sks,
+    String ruang,
+    String dosen,
+  ) {
+    return Card(
+      margin: const EdgeInsets.only(bottom: 15),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+      elevation: 2,
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start),
+      ),
+    );
+  }
 }
