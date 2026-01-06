@@ -189,6 +189,28 @@ class SusulanPages extends StatelessWidget {
               style: TextStyle(fontFamily: 'Inter', height: 1.5),
               textAlign: TextAlign.justify,
             ),
+            const SizedBox(height: 20),
+            const Text(
+              "Pelaksanaan di ruangan 505",
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Poppins',
+              ),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              "Rabu, Kamis :",
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Inter',
+              ),
+            ),
+            const SizedBox(height: 10),
+            _buildBulletPoint("Pagi : 08.00 - 12.00"),
+            _buildBulletPoint("Malam : 18.00 - 22.00"),
+            _buildBulletPoint("Sabtu : 08.00 - 15.00"),
           ],
         ),
       ),
