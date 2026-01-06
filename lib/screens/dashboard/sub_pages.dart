@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class JadwalUasPage extends StatelessWidget {
@@ -56,6 +58,32 @@ class JadwalUasPage extends StatelessWidget {
             ),
 
             const SizedBox(height: 20),
+
+            // Dropdown tahun
+            const Text(
+              "Tahun Akademik",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Poppins',
+              ),
+            ),
+            const SizedBox(height: 10),
+            DropdownButtonFormField<String>(
+              decoration: InputDecoration(
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                contentPadding: const EdgeInsets.symmetric(horizontal: 15),
+              ),
+              hint: const Text("Pilih Tahun"),
+              items: [
+                "2024/2025 Ganjil",
+                "2025/2026 Genap",
+              ].map((e) => DropdownMenuItem(value: e, child: Text(e))).toList(),
+              onChanged: (value) {},
+            ),
+
+            const SizedBox(height: 40),
           ],
         ),
       ),
