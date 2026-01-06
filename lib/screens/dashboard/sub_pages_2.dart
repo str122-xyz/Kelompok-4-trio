@@ -274,7 +274,32 @@ class KeuanganPage extends StatelessWidget {
                       fontSize: 15,
                     ),
                   ),
+                  const SizedBox(height: 5),
+                  Text(
+                    nominal,
+                    style: const TextStyle(
+                      fontFamily: 'Inter',
+                      color: Colors.grey,
+                      fontSize: 14,
+                    ),
+                  ),
                 ],
+              ),
+            ),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+              decoration: BoxDecoration(
+                color: color.withOpacity(0.1),
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Text(
+                status,
+                style: TextStyle(
+                  color: color,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12,
+                  fontFamily: 'Poppins',
+                ),
               ),
             ),
           ],
