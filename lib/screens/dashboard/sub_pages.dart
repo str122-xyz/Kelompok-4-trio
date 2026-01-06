@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 class JadwalUasPage extends StatelessWidget {
@@ -84,6 +82,46 @@ class JadwalUasPage extends StatelessWidget {
             ),
 
             const SizedBox(height: 40),
+
+            // Tombol cetak
+            SizedBox(
+              width: double.infinity,
+              height: 50,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFF304D6D),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
+                onPressed: () {
+                  showDialog(
+                    context: context,
+                    builder: (ctx) => AlertDialog(
+                      title: const Text("Info"),
+                      content: const Text(
+                        "Maaf fitur sedang dalam pengembangan",
+                      ),
+                      actions: [
+                        TextButton(
+                          onPressed: () => Navigator.pop(ctx),
+                          child: const Text("Tutup"),
+                        ),
+                      ],
+                    ),
+                  );
+                },
+                child: const Text(
+                  "Cetak Kartu Ujian",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Inter',
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
