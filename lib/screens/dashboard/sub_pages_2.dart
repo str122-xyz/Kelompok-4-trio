@@ -209,6 +209,35 @@ class KeuanganPage extends StatelessWidget {
         elevation: 0,
         iconTheme: const IconThemeData(color: Colors.black),
       ),
+      body: ListView(
+        padding: const EdgeInsets.all(20),
+        children: [
+          _buildKeuanganCard(
+            "BPP Semester 5 & 6",
+            "Rp 12.200.000",
+            "Lunas",
+            Colors.green,
+          ),
+          _buildKeuanganCard(
+            "Daftar Ulang",
+            "Rp 1.100.000",
+            "Lunas",
+            Colors.green,
+          ),
+          _buildKeuanganCard(
+            "BPP Semester 7 & 8",
+            "Rp 12.000.000",
+            "Belum Lunas",
+            Colors.red,
+          ),
+          _buildKeuanganCard(
+            "Daftar Ulang",
+            "Rp 1.000.000",
+            "Menunggu",
+            Colors.orange,
+          ),
+        ],
+      ),
     );
   }
 }
