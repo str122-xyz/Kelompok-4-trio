@@ -193,7 +193,7 @@ class SusulanPages extends StatelessWidget {
             const Text(
               "Pelaksanaan di ruangan 505",
               style: TextStyle(
-                fontSize: 18,
+                fontSize: 16,
                 fontWeight: FontWeight.bold,
                 fontFamily: 'Poppins',
               ),
