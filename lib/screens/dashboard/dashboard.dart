@@ -34,6 +34,30 @@ class _HomePageState extends State<HomePage> {
       badge: true,
       sound: true,
     );
+
+    if (settings.authorizationStatus == AuthorizationStatus.authorized) {
+      print('User granted permission');
+
+      String? token = await messaging.getToken();
+      print("FCM Token Saya: $token");
+
+      FirebaseMessaging.onMessage.listen((RemoteMessage message) {
+        print('Pesan masuk saat foreground: ${message.notification?.title}');
+
+        setState(() {
+          _notificationCount++;
+          _messages.add(message);
+        });
+
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text("Pesan Baru: ${message.notification?.title}"),
+            backgroundColor: const Color(0xFF304D6D),
+            duration: const Duration(seconds: 2),
+          ),
+        );
+      });
+    }
   }
 
   // Buat akun masing"
