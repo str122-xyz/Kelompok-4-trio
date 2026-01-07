@@ -58,6 +58,19 @@ class NotifPage extends StatelessWidget {
                       fontFamily: 'Poppins',
                     ),
                   ),
+                  subtitle: Text(
+                    notification?.body ?? "Tidak ada konten",
+                    style: const TextStyle(fontFamily: 'Inter'),
+                  ),
+                  trailing: const Text(
+                    "Baru",
+                    style: TextStyle(
+                      fontSize: 10,
+                      color: Colors.red,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Inter',
+                    ),
+                  ),
                 );
               },
             ),
