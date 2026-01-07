@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:badges/badges.dart' as badges; // Import Badges
 import 'package:kelompok4_app_mobile/screens/auth/login_page.dart';
+import 'package:kelompok4_app_mobile/screens/dashboard/notif_page.dart';
 import 'package:kelompok4_app_mobile/screens/dashboard/sub_pages.dart';
 import 'package:kelompok4_app_mobile/screens/dashboard/sub_pages_2.dart';
 import 'package:kelompok4_app_mobile/screens/team/team_profiles.dart';
@@ -24,6 +25,13 @@ class _HomePageState extends State<HomePage> {
   // Variabel notifikasi
   int _notificationCount = 0;
   List<RemoteMessage> _messages = [];
+
+  @override
+  void initState() {
+    super.initState();
+    _setupFCM();
+    _pages = [_buildHomeContent(), ProfileTeam(), _buildSettingsContent()];
+  }
 
   void _setupFCM() async {
     FirebaseMessaging messaging = FirebaseMessaging.instance;
@@ -74,13 +82,6 @@ class _HomePageState extends State<HomePage> {
 
   // List Halaman untuk Bottom Navigation
   late final List<Widget> _pages;
-
-  @override
-  void initState() {
-    super.initState();
-    _setupFCM();
-    _pages = [_buildHomeContent(), ProfileTeam(), _buildSettingsContent()];
-  }
 
   void _onItemTapped(int index) {
     setState(() {
@@ -136,6 +137,7 @@ class _HomePageState extends State<HomePage> {
                 style: TextStyle(
                   color: Color(0xFF304D6D),
                   fontWeight: FontWeight.bold,
+                  fontFamily: 'Inter',
                 ),
               ),
             ),
@@ -178,9 +180,22 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.notifications_outlined, color: Colors.white),
+          // Notip
+          Padding(
+            padding: const EdgeInsets.only(right: 15.0),
+            child: GestureDetector(
+              onTap: () {
+                setState(() {
+                  _notificationCount = 0;
+                });
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => NotifPage(notifications: _messages),
+                  ),
+                );
+              },
+            ),
           ),
         ],
       ),
