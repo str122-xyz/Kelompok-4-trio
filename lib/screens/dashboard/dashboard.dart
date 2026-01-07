@@ -195,6 +195,23 @@ class _HomePageState extends State<HomePage> {
                   ),
                 );
               },
+              child: badges.Badge(
+                position: badges.BadgePosition.topEnd(top: 0, end: 3),
+                showBadge: _notificationCount > 0,
+                badgeContent: Text(
+                  _notificationCount.toString(),
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 10,
+                    fontFamily: 'Inter',
+                  ),
+                ),
+                child: const Icon(
+                  Icons.notifications_outlined,
+                  color: Colors.white,
+                  size: 28,
+                ),
+              ),
             ),
           ),
         ],
