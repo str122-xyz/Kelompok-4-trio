@@ -27,6 +27,13 @@ class _HomePageState extends State<HomePage> {
 
   void _setupFCM() async {
     FirebaseMessaging messaging = FirebaseMessaging.instance;
+
+    // 1. Minta Izinnn
+    NotificationSettings settings = await messaging.requestPermission(
+      alert: true,
+      badge: true,
+      sound: true,
+    );
   }
 
   // Buat akun masing"
