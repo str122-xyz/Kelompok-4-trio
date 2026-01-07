@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:badges/badges.dart' as badges; // Import Badges
 import 'package:kelompok4_app_mobile/screens/auth/login_page.dart';
 import 'package:kelompok4_app_mobile/screens/dashboard/sub_pages.dart';
 import 'package:kelompok4_app_mobile/screens/dashboard/sub_pages_2.dart';
@@ -19,6 +21,14 @@ class _HomePageState extends State<HomePage> {
   User? currentUser = FirebaseAuth.instance.currentUser;
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
+  // Variabel notifikasi
+  int _notificationCount = 0;
+  List<RemoteMessage> _messages = [];
+
+  void _setupFCM() async {
+    FirebaseMessaging messaging = FirebaseMessaging.instance;
+  }
+
   // Buat akun masing"
   final Map<String, String> _memberNames = {
     'atmin@email.com': 'Admin Ganteng',
@@ -37,11 +47,8 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    _pages = [
-      _buildHomeContent(), // Halaman 0: Home Portal
-      ProfileTeam(),
-      _buildSettingsContent(), // Halaman 2: Settings
-    ];
+    _setupFCM();
+    _pages = [_buildHomeContent(), ProfileTeam(), _buildSettingsContent()];
   }
 
   void _onItemTapped(int index) {
