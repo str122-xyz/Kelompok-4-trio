@@ -1,12 +1,25 @@
-# 🎓 Ingpoglb App - Portal Informasi Kampus
+# 🎓 Ingpoglb - Portal Informasi Kampus
 
-![Flutter](https://img.shields.io/badge/Flutter-3.0-blue?style=for-the-badge&logo=flutter)
-![Firebase](https://img.shields.io/badge/Firebase-Enabled-orange?style=for-the-badge&logo=firebase)
-![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+<div align="center">
+  <a href="https://global.ac.id/" target="_blank">
+    <img src="https://lms.global.ac.id/lms/pluginfile.php/1/theme_klass/footerlogo/1745232397/logo-global-institute-stroke.png"
+         alt="Institut Teknologi dan Bisnis Bina Sarana Global"
+         width="200"/>
+  </a>
+</div>
 
-**Project UAS Mobile Programming - Kelompok 4 Trio**
+<div align="center">
+  Institut Teknologi dan Bisnis Bina Sarana Global <br>
+  FAKULTAS TEKNOLOGI INFORMASI & KOMUNIKASI <br>
+  <a href="https://global.ac.id/">https://global.ac.id/</a>
+</div>
 
-**Ingpoglb App** adalah aplikasi mobile berbasis Flutter yang dirancang sebagai portal akademik mahasiswa modern. Aplikasi ini mempermudah mahasiswa untuk mengakses jadwal kuliah, informasi keuangan, profil tim, serta menerima pengumuman kampus secara *real-time* melalui notifikasi.
+
+##  Project UAS
+  - Mata Kuliah : Aplikasi Mobile
+  - Kelas : TI 23 SE 1 
+  - Semester : GANJIL 
+  - Tahun Akademik: 2025 - 2026
 
 ---
 
@@ -49,19 +62,19 @@
 
 ---
 
-## 👥 Kelompok 4 Trio
-
-| No | NIM | Nama | Role |
-| :--- | :--- | :--- | :--- |
-| 1. | 1123150070 | Satria Herlambang | `Team Leader` |
-| 2. | 1123150028 | Ahmad Zein Adli W. | `Mobile Developer` |
-| 3. | 1123150029 | Mohamad Enzho Yuliawan | `UI/UX Designer` |
-| 4. | 1123150086 | Felan Ardenta Yoga | `Backend Integration` |
-| 5. | 1123150087 | Sadam Irham Marami | `Fullstack Developer` |
+## 📸 Screenshot Aplikasi
 
 ---
 
-## 📸 Screenshot Aplikasi
+## 👥 Team Development
+
+| No | NIM | Nama | Role                  |
+| :--- | :--- | :--- |:----------------------|
+| 1. | 1123150070 | Satria Herlambang | `Team Leader`         |
+| 2. | 1123150028 | Ahmad Zein Adli W. | `Mobile Developer`    |
+| 3. | 1123150029 | Mohamad Enzho Yuliawan | `Fullstack Developer` |
+| 4. | 1123150086 | Felan Ardenta Yoga | `UI/UX Designer`      |
+| 5. | 1123150087 | Sadam Irham Marami | `Backend Integration` |
 
 ---
 
