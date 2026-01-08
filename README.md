@@ -23,6 +23,12 @@
 
 ---
 
+**Project UAS Mobile Programming - Kelompok 4 Trio**
+
+**Ingpoglb** adalah aplikasi mobile berbasis Flutter yang dirancang sebagai portal akademik mahasiswa modern. Aplikasi ini mempermudah mahasiswa untuk mengakses jadwal kuliah, informasi keuangan, profil tim, serta menerima pengumuman kampus secara *real-time* melalui notifikasi.
+
+---
+
 ## 🔥 Fitur Utama
 
 ### 1. 🔐 Autentikasi & Keamanan
