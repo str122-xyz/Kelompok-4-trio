@@ -70,6 +70,36 @@
 
 ## 📸 Screenshot Aplikasi
 
+**Splash Screen**
+<p align="center">
+  <img src="ssan/splash1.jpg" width="160"/>
+  <img src="ssan/splash2.jpg" width="160"/>
+  <img src="ssan/splash3.jpg" width="160"/>
+  <img src="ssan/splash4.jpg" width="160"/>
+</p>
+
+**Login**
+<p align="center">
+  <img src="ssan/login.jpg" width="200"/>
+</p>
+
+**Dashboard**
+<p align="center">
+  <img src="ssan/home.jpeg" width="195"/>
+  <img src="ssan/teamlist.jpg" width="200"/>
+  <img src="ssan/setting.jpg" width="200"/>
+  <img src="ssan/drawer.jpg" width="200"/>
+</p>
+
+**Profiles**
+<p align="center">
+  <img src="ssan/felan.jpg" width="160"/>
+  <img src="ssan/satria.jpg" width="160"/>
+  <img src="ssan/enzho.jpg" width="160"/>
+  <img src="ssan/sadam.jpg" width="160"/>
+  <img src="ssan/zein.jpg" width="160"/>
+</p>
+
 ---
 
 ## 👥 Team Development
@@ -84,30 +114,79 @@
 
 ---
 
+## Demo Video
+
+**[Watch Full Demo on YouTube]()**
+
+Alternative link: **[Google Drive Demo]()**
+
+---
+
+## Download Aplikasi
+
+### Latest Release v1.0.0
+- [**Download APK**]()
+
+---
+
+## Built With
+
+- **[Flutter](https://flutter.dev/)** - UI Framework
+- **[Dart](https://dart.dev/)** - Programming Language
+- **[Firebase](https://firebase.google.com/)** - Backend & Authentication
+- **[SQLite](https://www.sqlite.org/)** - Local Database
+- **[Provider](https://pub.dev/packages/provider)** - State Management
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+Pastikan Anda sudah menginstall:
+- Flutter SDK (3.16.0 or higher)
+- Dart SDK (3.2.0 or higher)
+- Android Studio / VS Code
+- Git
+
 ## 🚀 Cara Instalasi & Menjalankan
 
-## 1. Clone Repository
+**1. Clone Repository**
 ```bash
 git clone https://github.com/str122-xyz/Kelompok-4-trio.git
 cd ingpoglb-app
 ```
 
-## 2. Install Dependencies
+**2. Install Dependencies**
 ```bash
     flutter clean
     flutter pub get
 ```
 
-## 3. Jalankan Aplikasi
+**3. Jalankan Aplikasi**
 ```bash
     flutter run
 ```
 
 ---
 
-## Dokumentasi
+## Flow
 
+```
+1. Splash Screen (Auto-login check)
+   ↓
+2. Login Screen
+   ↓
+3. Home Page (Dashboard)
+   ↓
+4. Team List
+   ↓
+5. Settings (Logout)
+```
 
 ---
 
-## Download Aplikasi
+<div align="center">
+  <p>Made with by Kelompok 4 Trio</p>
+  <p>© 2026 Ingpoglb. All rights reserved.</p>
+</div>
