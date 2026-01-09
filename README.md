@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="https://global.ac.id/" target="_blank">
-    <img src="https://lms.global.ac.id/lms/pluginfile.php/1/theme_klass/footerlogo/1745232397/logo-global-institute-stroke.png"
+    <img src="ssan/header_global.png"
          alt="Institut Teknologi dan Bisnis Bina Sarana Global"
          width="200"/>
   </a>
