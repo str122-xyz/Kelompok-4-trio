@@ -116,9 +116,7 @@
 
 ## Demo Video
 
-**[Watch Full Demo on YouTube]()**
-
-Alternative link: **[Google Drive Demo]()**
+**[Watch Full Demo on YouTube](https://youtu.be/fuWr6jkIZYA?si=MzaGgmygRvTUaXS6)**
 
 ---
 
@@ -170,6 +168,13 @@ cd ingpoglb-app
 
 ---
 
+## Login akun atmin Firebase Console
+
+**Email: atmin@email.com**<br>
+**Password: atmin1234**
+
+---
+
 ## Flow
 
 ```
@@ -183,6 +188,41 @@ cd ingpoglb-app
    ↓
 5. Settings (Logout)
 ```
+
+---
+
+## 📁 Struktur Project
+
+- 📦 KELOMPOK4_APP_MOBILE
+  - 📂 lib
+    - 📂 models
+      - 📄 team_models.dart
+    - 📂 screens
+      - 📂 auth
+        - 📄 login_page.dart
+      - 📂 dashboard
+        - 📄 dashboard.dart
+        - 📄 notif_page.dart
+        - 📄 sub_pages.dart
+        - 📄 sub_pages_2.dart
+      - 📂 splash
+        - 📄 splash_screen1.dart
+        - 📄 splash_screen_2.dart
+        - 📄 splash_screen_3.dart
+        - 📄 splash_screen_4.dart
+      - 📂 team
+        - 📄 enzo_profile.dart
+        - 📄 felan_profile.dart
+        - 📄 sadam_profile.dart
+        - 📄 satria_profile.dart
+        - 📄 zeinn_profile.dart
+        - 📄 team_profiles.dart
+    - 📂 services
+      - 📄 auth_service.dart
+    - 📂 widgets
+    - 📄 firebase_options.dart
+    - 📄 main.dart
+  - 📄 README.md
 
 ---
 
