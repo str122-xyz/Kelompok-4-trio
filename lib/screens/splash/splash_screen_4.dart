@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:kelompok4_app_mobile/screens/auth/login_page.dart';
 
-class SplashSatria extends StatelessWidget {
-  const SplashSatria({super.key});
+class SplashScreenSadam extends StatefulWidget {
+  const SplashScreenSadam({super.key});
 
+  @override
+  State<SplashScreenSadam> createState() => _SplashScreenSadamState();
+}
+
+class _SplashScreenSadamState extends State<SplashScreenSadam> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF353535),
+      backgroundColor: const Color(0xFF284B63),
       body: SafeArea(
         child: Column(
           children: [
@@ -17,13 +23,13 @@ class SplashSatria extends StatelessWidget {
                 color: Colors.transparent,
                 child: InkWell(
                   customBorder: const CircleBorder(),
-                  /*//Todo ke splash berikutnya
                   onTap: () {
-                    Navigator.push(
+                    Navigator.pushAndRemoveUntil(
                       context,
-                      MaterialPageRoute(builder: (context) => const Splash(ganti nama)()),
+                      MaterialPageRoute(builder: (_) => const LoginPage()),
+                      (_) => false,
                     );
-                  },*/
+                  },
                   child: Container(
                     width: 250,
                     height: 250,
@@ -39,7 +45,7 @@ class SplashSatria extends StatelessWidget {
                         ),
                       ],
                       image: const DecorationImage(
-                        image: AssetImage("assets/images/logo1.png"),
+                        image: AssetImage("assets/images/logo3.png"),
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -63,7 +69,7 @@ class SplashSatria extends StatelessWidget {
             const SizedBox(height: 10),
 
             const Text(
-              "Terupdate & Terkini",
+              "Tercepat",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontFamily: 'Poppins',
@@ -77,14 +83,13 @@ class SplashSatria extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                _buildDot(isActive: false), //nonaktif
+                const SizedBox(width: 10),
+                _buildDot(isActive: false), //nonaktif
+                const SizedBox(width: 10),
                 _buildDot(isActive: true), //aktif
-                const SizedBox(width: 10),
-                _buildDot(isActive: false), //nonaktif
-                const SizedBox(width: 10),
-                _buildDot(isActive: false), //nonaktif
               ],
             ),
-
             const SizedBox(height: 50),
           ],
         ),
