@@ -123,7 +123,7 @@
 ## Download Aplikasi
 
 ### Latest Release v1.0.0
-- [**Download APK**]()
+- [**Download APK**](https://github.com/str122-xyz/Kelompok-4-trio/releases/download/v1.0.0/Ingpoglb-v1.0.0.apk)
 
 ---
 
@@ -165,13 +165,6 @@ cd ingpoglb-app
 ```bash
     flutter run
 ```
-
----
-
-## Login akun atmin Firebase Console
-
-**Email: atmin@email.com**<br>
-**Password: atmin1234**
 
 ---
 
